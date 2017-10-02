@@ -1,0 +1,9 @@
+Houses > Models > Fraternity
+- Dynamically set the media paths based on `english_name`
+
+Houses > Templates
+- Base Template for Houses
+- Landing page for Houses
+
+App > General
+- Homepage
