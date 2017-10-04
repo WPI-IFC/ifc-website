@@ -2,8 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-def index(request):
-    return HttpResponse("Hello, world")
+def house_index(request):
+    return render(request, "house_home.html")
 
 
 def house_info(request, house):
