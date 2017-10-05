@@ -10,7 +10,7 @@ urlpatterns = [
     ),
     url(
         regex=r'^(?P<house>[\D]+)$',
-        view=views.house_info,
+        view=views.route_house,
         name='house-landing'
     )
 ]

@@ -20,5 +20,8 @@ class Fraternity(models.Model):
     def __str__(self):
         return self.english_name
 
+    def lower_repr(self):
+        return ''.join(x for x in self.__str__().lower() if x != " ")
+
     class Meta:
         verbose_name_plural = "fraternities"
