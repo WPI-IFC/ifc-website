@@ -3,4 +3,4 @@
 db.*
 __pycache__
 media/
-static/
+/static
