@@ -6,7 +6,7 @@ class Fraternity(models.Model):
     letters = models.ImageField(
         upload_to="letters"
         )
-    pimary_color = models.CharField(max_length=7)
+    primary_color = models.CharField(max_length=7)
     secondary_color = models.CharField(max_length=7)
     featured_picture = models.ImageField(
         upload_to="featured",

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{house.english_name}}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'houses/base.css' %}">
+</head>
+<body>
+    <style>
+        .nav-bar {
+            background: {{ house.primary_color }} !important;
+        }
+
+        .nav-bar li:hover{
+            background: {{ house.secondary_color }} !important;
+        }
+    </style>
+    {% include "header.html" %}
+    <div class="content-container">
+        {{house.english_name}}
+    </div>
+</body>
+</html>
