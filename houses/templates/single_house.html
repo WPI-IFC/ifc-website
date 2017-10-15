@@ -7,6 +7,7 @@
     <title>{{house.english_name}}</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'houses/base.css' %}">
+    <link rel="stylesheet" href="{% static 'houses/single_house.css' %}">
 </head>
 <body>
     <style>
@@ -20,7 +21,23 @@
     </style>
     {% include "header.html" %}
     <div class="content-container">
-        <p>{{house.english_name}}</p>
+        <div class="house-title">
+            <h1>{{house.english_name}}</h1>
+            <h2>{{house.nickname}}</h2>
+        </div>
+        <div class="featured-content">
+                <img class="featured-image" src="{% static 'houses/all_houses.png' %}">
+                <p class="featured-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus aperiam exercitationem facere voluptatibus nulla omnis, ducimus repellendus quibusdam a fuga cupiditate rem nisi illo aliquam voluptatem laboriosam, ipsam rerum quae!
+                </p>
+                <span class="featured-divider"></span>
+            </div>
+            <div class="body-content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate illum veritatis iste non quasi, perferendis porro eum quaerat cupiditate ex pariatur dolores asperiores, aperiam incidunt mollitia facere fugiat laborum quisquam!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt molestias commodi ipsam quos odio quis voluptate ad provident eligendi dolores beatae, aliquam illo ut error at. Nulla aliquid totam quos.
+                </p>
+            </div>
     </div>
 </body>
 </html>
