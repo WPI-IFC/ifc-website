@@ -111,3 +111,14 @@ body {
     padding: 10px;
     padding-bottom: 0;
 }
+
+.footer {
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 0;
+    background: #bebebe;
+    padding: 10px;
+    text-align: center;
+    color: #636363;
+}
