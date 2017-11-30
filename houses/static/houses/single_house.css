@@ -55,3 +55,23 @@
 .nav-bar li:hover{
     color: #333333;
 }
+
+@media screen and (max-width: 425px){
+    .content-container {
+        width: 100%;
+    }
+    
+    .content-container .house-title {
+        margin-left: 10px;
+    }
+
+    .featured-text {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .body-content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

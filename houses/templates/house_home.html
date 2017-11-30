@@ -11,14 +11,17 @@
             <div class="featured-content">
                 <img class="featured-image" src="{% static 'houses/all_houses.png' %}">
                 <p class="featured-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus aperiam exercitationem facere voluptatibus nulla omnis, ducimus repellendus quibusdam a fuga cupiditate rem nisi illo aliquam voluptatem laboriosam, ipsam rerum quae!
+                    <h1 style="text-align:center;">Houses</h1>
                 </p>
             </div>
             <div class="body-content">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate illum veritatis iste non quasi, perferendis porro eum quaerat cupiditate ex pariatur dolores asperiores, aperiam incidunt mollitia facere fugiat laborum quisquam!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt molestias commodi ipsam quos odio quis voluptate ad provident eligendi dolores beatae, aliquam illo ut error at. Nulla aliquid totam quos.
-                </p>
+                <div class="house-list">
+                    <ul>
+                        {% for house, nospace in houses %}
+                            <li><a href="{{ nospace }}">{{ house }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
         </div>
         {% include "footer.html" %}

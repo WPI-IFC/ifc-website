@@ -1,0 +1,9 @@
+.featured-picture {
+    width: 60%;
+    margin: auto;
+}
+
+.featured-picture img{
+    width: 100%;
+    display: block;
+}

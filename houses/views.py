@@ -3,7 +3,12 @@ from django.http import HttpResponse
 from .models import Fraternity
 
 def house_index(request):
-    return render(request, "house_home.html")
+    context = {}
+    context['houses'] = []
+    for org in Fraternity.objects.all():
+        context['houses'].append((org.english_name,
+        "".join(x.lower() for x in org.english_name if x != " ")))
+    return render(request, "house_home.html", context)
 
 
 def route_house(request, house):
@@ -15,4 +20,5 @@ def route_house(request, house):
                                                                        # If the field is blank, interally it is false
                                                                        # because why not
             break
+    print(context["house"], context["has_featured_image"])
     return render(request, "single_house.html", context)

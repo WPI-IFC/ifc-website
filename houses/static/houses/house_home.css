@@ -13,3 +13,42 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.house-list {
+    column-count: 3;
+    width: 60%;
+    margin: auto;
+}
+
+.house-list li {
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.house-list li a:hover{
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+@media screen and (max-width: 425px){
+    .nav-bar {
+        height: 9em;
+    }
+
+    .nav-bar ul{
+        display: block;
+        height: 40%;
+    }
+
+    .home-image {
+        margin-left: 40%;
+    }
+
+}

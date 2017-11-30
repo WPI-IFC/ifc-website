@@ -64,6 +64,16 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 25px;
+}
+
 .home-image {
     margin-left: 17%;
 }
@@ -74,6 +84,8 @@ a {
     height: 4em;
     overflow: hidden;
     white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-bar img{
@@ -87,7 +99,6 @@ a {
     padding: 0;
     margin: 0;
     height: 100%;
-    float: right;
     padding-right: 15%;
 }
 
@@ -102,6 +113,26 @@ a {
     text-align: center;
     color: #E4E4E4;
     text-decoration: none;
+}
+
+@media screen and (max-width: 425px){
+    .nav-bar {
+        height: 9em;
+        display: block;
+    }
+
+    .nav-bar ul{
+        display: block;
+        height: 40%;
+    }
+
+    .home-image {
+        margin-left: 40%;
+    }
+
+    .content-container {
+        width: 100%;
+    }
 }
 
 .nav-bar li:hover{

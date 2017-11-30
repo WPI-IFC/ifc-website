@@ -6,12 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
     <link rel="stylesheet" href="{% static 'houses/base.css' %}">
+    <link rel="stylesheet" href="{% static 'ifcweb/home.css' %}">
     <title>WPI IFC</title>
 </head>
 <body>
     {% include "header.html" %}
     <div class="content-container">
-        Main page
+        <div class="featured-picture">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/WPI_wordmark.png/1200px-WPI_wordmark.png" alt="">
+        </div>
+        <h1>
+            Main page
+        </h1>
     </div>
     {% include "footer.html" %}
 </body>

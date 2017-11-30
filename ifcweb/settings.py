@@ -25,7 +25,7 @@ SECRET_KEY = 'b%5#^l#o#wdjh=c%)v^3+qudzy#-pi&45*-m39+h1i)h5yd$nx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['hi-friend.dyn.wpi.edu']
 
 
 # Application definition
