@@ -20,5 +20,4 @@ def route_house(request, house):
                                                                        # If the field is blank, interally it is false
                                                                        # because why not
             break
-    print(context["house"], context["has_featured_image"])
     return render(request, "single_house.html", context)
