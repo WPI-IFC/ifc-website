@@ -1,3 +1,6 @@
+Houses > General
+- Form for editing
+
 Houses > Models > Fraternity
 - Dynamically set the media paths based on `english_name`
 
@@ -8,3 +11,4 @@ Houses > Templates
 App > General
 - Homepage
 - Responsive for mobile
+- Setup accounts for each house
