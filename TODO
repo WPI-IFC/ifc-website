@@ -12,3 +12,12 @@ App > General
 - Homepage
 - Responsive for mobile
 - Setup accounts for each house
+- Add wpiifc.org to allowed hosts
+- Login Page
+- Refactor house base.css common elements out
+
+App > Production
+- Remove localhost from allowed hosts
+- Remove test accounts
+- Remove Debug
+- Add script to check for security checks before deploy
