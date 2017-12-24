@@ -3,6 +3,7 @@ Houses > General
 
 Houses > Models > Fraternity
 - Dynamically set the media paths based on `english_name`
+- Find a better way to lookup object based on lower-nospace name
 
 Houses > Templates
 - Base Template for Houses
@@ -12,7 +13,6 @@ App > General
 - Homepage
 - Responsive for mobile
 - Setup accounts for each house
-- Add wpiifc.org to allowed hosts
 - Login Page
 - Refactor house base.css common elements out
 
@@ -20,4 +20,5 @@ App > Production
 - Remove localhost from allowed hosts
 - Remove test accounts
 - Remove Debug
+- Change footer
 - Add script to check for security checks before deploy

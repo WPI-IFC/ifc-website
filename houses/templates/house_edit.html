@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit {{ house.english_name }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'houses/base.css' %}">
+    <link rel="stylesheet" href="{% static 'houses/single_house.css' %}">
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class='content-container'>
+        <form action="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Save</button>
+        </form>
+    </div>
+    {% include 'footer.html' %}
+
+    <style>
+        .nav-bar {
+            background: {{ house.primary_color }} !important;
+        }
+
+        .nav-bar li:hover{
+            background: {{ house.secondary_color }} !important;
+        }
+    </style>
+</body>
+</html>
