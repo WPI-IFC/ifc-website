@@ -13,6 +13,9 @@ App > General
 - Homepage
 - Responsive for mobile
 - Setup accounts for each house
+- Navbar twitching
+- Navbar drop down menus
+- Navbar changes for authenticated users
 - Login Page
 - Refactor house base.css common elements out
 
