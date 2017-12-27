@@ -13,6 +13,9 @@ Houses > Templates
 - Base Template for Houses
 - Landing page for Houses
 
+Officers > Models > Post
+- Multiple file upload
+
 App > General
 - Responsive for mobile
 - Setup accounts for each house
@@ -29,6 +32,7 @@ App > General > Homepage
 
 App > General > Login Page
 - Style
+- Organize file uploads
 
 App > Production
 - Remove localhost from allowed hosts
@@ -36,3 +40,4 @@ App > Production
 - Remove Debug
 - Change footer
 - Add script to check for security checks before deploy
+- Make sure Pillow is installed for Django
