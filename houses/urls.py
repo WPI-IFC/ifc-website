@@ -9,11 +9,11 @@ urlpatterns = [
         name='house-info'
     ),
     url(
-        regex=r'^(?P<house>[\D]+)/edit/',
+        regex=r'^(?P<house>[\D]+)/edit/$',
         view=views.house_edit,
         name='house-edit',
     ),
-    url(
+     url(
         regex=r'^(?P<house>[\D]+)/$',
         view=views.route_house,
         name='house-landing'

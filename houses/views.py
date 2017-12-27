@@ -23,6 +23,8 @@ def route_house(request, house):
                                                                        # If the field is blank, interally it is false
                                                                        # because why not
             break
+    if not "house" in context:
+        raise Http404
     return render(request, "single_house.html", context)
 
 
@@ -35,7 +37,8 @@ def house_edit(request, house):
             org_obj = org
             break
     if org_obj is None:
-        raise Http404("Invalid house request: {}".format(house)) # TODO(Tom): make a 404.html
+        raise Http404("Invalid house request: {}".format(house))
+
     if request.method == 'POST':
         form = HouseForm(request.POST)
         if form.is_valid():
