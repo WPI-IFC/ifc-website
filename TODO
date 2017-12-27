@@ -1,5 +1,9 @@
 Houses > General
-- Form for editing
+- Fix font issue with `column-count`
+
+Houses > Edit
+- Style
+- Look into renaming fields in template
 
 Houses > Models > Fraternity
 - Dynamically set the media paths based on `english_name`
@@ -10,14 +14,21 @@ Houses > Templates
 - Landing page for Houses
 
 App > General
-- Homepage
 - Responsive for mobile
 - Setup accounts for each house
-- Navbar twitching
-- Navbar drop down menus
-- Navbar changes for authenticated users
-- Login Page
 - Refactor house base.css common elements out
+
+App > General > Navbar
+- Fix twitching
+- Add drop down menus
+- Change for authenticated users
+
+App > General > Homepage
+- Spot for dynamic content
+- Banner call to action text
+
+App > General > Login Page
+- Style
 
 App > Production
 - Remove localhost from allowed hosts
