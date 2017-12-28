@@ -7,15 +7,38 @@
     <title>About Us</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'houses/base.css' %}">
+    <link rel="stylesheet" href="{% static 'ifcweb/about.css' %}">
 </head>
 <body>
     {% include 'header.html' %}
     <div class="content-container">
         <h1>WPI's Interfraternity Council</h1>
+        <h2>Mission</h2>
         <p>
-            <h2>Header 2</h2>
             Content
         </p>
+        <div class="officer-structure">
+            <h2>Structure</h2>
+            <p>
+                <img src="{% static 'ifcweb/ifc-orgchart.png' %}" alt="org chart">
+                <div class="officer-cards">
+                    <!--- TODO(Tom): replace with templating -->
+                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot">President</div>
+                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot">VPresident0</div>
+                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot">VPresident1</div>
+                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot">VPresident2</div>
+                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot">VPresident3</div>
+                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot">VPresident4</div>
+                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot">VPresident5</div>
+                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot">VPresident6</div>
+                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot">VPresident7</div>
+                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot">VPresident8</div>
+                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot">VPresident9</div>
+                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot">VPresident10</div>
+                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot">VPresident11</div>
+                </div>
+            </p>
+        </div>
     </div>
     {% include 'footer.html' %}
 </body>
