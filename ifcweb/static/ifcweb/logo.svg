@@ -29,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="209.56215"
-     inkscape:cy="526.65168"
+     inkscape:cx="-4.0092786"
+     inkscape:cy="812.36597"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -40,7 +40,7 @@
      fit-margin-bottom="0"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
-     inkscape:window-x="1912"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -73,21 +73,22 @@
            x="287.14285"
            y="473.94824"
            style="fill:#ffffff" /></flowRegion><flowPara
-         id="flowPara3690" /></flowRoot>    <flowRoot
+         id="flowPara3690" /></flowRoot>    <text
        xml:space="preserve"
-       id="flowRoot3692"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.38400035,0,0,0.38400035,16.920776,-164.03956)"><flowRegion
-         id="flowRegion3694"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '"><rect
-           id="rect3696"
-           width="465.71432"
-           height="271.42859"
-           x="205.71428"
-           y="401.09113"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '" /></flowRegion><flowPara
-         id="flowPara3698"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;line-height:1;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#ffffff">IFC</flowPara></flowRoot>    <rect
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.36001396px;line-height:1;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.38400036"
+       x="95.915344"
+       y="46.206398"
+       id="text69"><tspan
+         sodipodi:role="line"
+         x="95.915344"
+         y="46.206398"
+         id="tspan67"
+         style="stroke-width:0.38400036"><tspan
+           x="95.915344"
+           y="46.206398"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:73.72806549px;line-height:1;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#ffffff;stroke-width:0.38400036"
+           id="tspan65">IFC</tspan></tspan></text>
+    <rect
        style="fill:#ffffff;stroke:none;stroke-width:0.22164994"
        id="rect3700"
        width="134.2337"
