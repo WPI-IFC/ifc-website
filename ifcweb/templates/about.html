@@ -22,7 +22,11 @@
             <p>
                 <img src="{% static 'ifcweb/ifc-orgchart.png' %}" alt="org chart">
                 <div class="officer-cards">
-                    <!--- TODO(Tom): replace with templating -->
+                    {% if not errors %}
+                        {% for user, position in officers %}
+                        <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>{{ position }}</span></div>
+                        {% endfor %}
+                    {% else %}
                     <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>President</span></div>
                     <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident0</span></div>
                     <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident1</span></div>
@@ -36,6 +40,8 @@
                     <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident9</span></div>
                     <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident10</span></div>
                     <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident11</span></div>
+                    ERRORS
+                    {% endif %}
                 </div>
             </p>
         </div>
