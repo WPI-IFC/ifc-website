@@ -12,3 +12,7 @@ like are helpful.  Before you submit it, make sure you put the "Feature Request"
 
 ### How do contribute?
 Take a look at the open issues and hack away.  Reference the issue # when you make a pull request.
+
+## Contributer Notes
+- We are not going out of our way to support IE, but as a rule of thumb
+try to use CSS and JS that works with at least IE 11. [caniuse](https://caniuse.com) is a good resource for this.
