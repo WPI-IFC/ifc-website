@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec python manage.py dumpdata -e houses -e officers -e admin.logentry -e sessions --indent 2 > fixtures
