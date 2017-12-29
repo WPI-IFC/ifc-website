@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django.utils.text import slugify
 
 class Biography(models.Model):
     user = models.OneToOneField(
@@ -9,8 +10,12 @@ class Biography(models.Model):
     content = models.TextField()
     headshot = models.ImageField()
 
+    def __str__(self):
+        return self.user.username
+
     class Meta():
         verbose_name_plural = "bibliographies"
+
 
 class Blog(models.Model):
     current_owner = models.OneToOneField(
@@ -20,7 +25,15 @@ class Blog(models.Model):
                                   # since these belong to positions not users
     )
     position_title = models.CharField(max_length=100)
+    slug = models.SlugField()
 
+    def __str__(self):
+        return self.position_title
+
+    def save(self, *args, **kwargs):
+        if not self.id:
+            self.slug = slugify(self.position_title)
+        super(Blog, self).save(*args, **kwargs)
 
 
 class Post(models.Model):
@@ -40,6 +53,9 @@ class Post(models.Model):
     title = models.CharField(max_length=100)
     body = models.TextField()
     attachments = models.FileField()
+
+    def __str__(self):
+        return self.blog.position_title + " - " + self.title
 
     class Meta():
         ordering = ("published",)

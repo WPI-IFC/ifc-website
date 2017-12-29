@@ -1,6 +1,16 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from django.contrib.auth.models import User
 
-# Create your views here.
+from .models import Blog, Biography
+
 def officer_index(request):
     context = {}
     return render(request, "404.html", context)
+
+def position_overview(request, slug):
+    context = {}
+    blog = get_object_or_404(Blog, slug=slug)
+    context['user'] = blog.current_owner
+    context['biography'] = Biography.objects.get(user=blog.current_owner)
+    context['position'] = blog.position_title
+    return render(request, "position_overview.html", context)

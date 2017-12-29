@@ -23,8 +23,18 @@
                 <img src="{% static 'ifcweb/ifc-orgchart.png' %}" alt="org chart">
                 <div class="officer-cards">
                     {% if not errors %}
-                        {% for user, position in officers %}
-                        <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>{{ position }}</span></div>
+                        {% for user, headshot, position, slug in officers %}
+                        <div class="card">
+                            <a href="officer/{{ slug }}">
+                            <img src="{{ headshot.url }}" alt="headshot">
+                            </a>
+                            <span class="officer-name">
+                                {{ user.first_name }} {{ user.last_name }}<br>
+                            </span>
+                            <span class="officer-position">
+                                {{ position }}
+                            </span>
+                        </div>
                         {% endfor %}
                     {% else %}
                     <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>President</span></div>
