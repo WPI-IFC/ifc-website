@@ -40,7 +40,7 @@ def house_edit(request, house):
         raise Http404("Invalid house request: {}".format(house))
 
     if request.method == 'POST':
-        form = HouseForm(request.POST, instance=org_obj)
+        form = HouseForm(request.POST, request.FILES, instance=org_obj)
         if form.is_valid():
             form.save() # NOTE(Tom): may want to add a timestamp feature in the future
             return redirect('house-landing', house=house)

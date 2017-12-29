@@ -18,6 +18,12 @@
     color: #707070;
 }
 
+.content-container h3 {
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
 .featured-image {
     display: block;
     margin-right: auto;
@@ -50,6 +56,16 @@
     margin-right: 120px;
     margin-top: 30px;
     padding-bottom: 15px;
+}
+
+.body-content p {
+    margin-bottom: 20px;
+}
+
+.body-content img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
 }
 
 .nav-bar li:hover{

@@ -38,9 +38,15 @@
             </div>
             <div class="body-content">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate illum veritatis iste non quasi, perferendis porro eum quaerat cupiditate ex pariatur dolores asperiores, aperiam incidunt mollitia facere fugiat laborum quisquam!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt molestias commodi ipsam quos odio quis voluptate ad provident eligendi dolores beatae, aliquam illo ut error at. Nulla aliquid totam quos.
+                    {{ house.extra_info|linebreaks }}
                 </p>
+                <h3>Values</h3>
+                <p>
+                    {{ house.values }}
+                </p>
+            {% if house.house_pic %}
+                <img src="{{ house.house_pic.url }}" alt="{{ house.english_name }} House">
+            {% endif %}
             </div>
     </div>
     {% include "footer.html" %}
