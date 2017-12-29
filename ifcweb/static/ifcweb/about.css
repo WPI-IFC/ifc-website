@@ -28,16 +28,27 @@
     padding-top: 1em;
 }
 
+.officer-structure .officer-cards a {
+    color: inherit;
+}
+
 .officer-structure .officer-cards img {
     display: block;
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    border: 1px solid rgb(204, 204, 204);
 }
 
-.officer-structure .officer-cards span{
+.officer-structure .officer-cards .officer-name {
     padding-top: 10px;
-    min-height: 3.5em;
+    min-height: 2em;
+    color: rgb(94, 94, 94);
+}
+
+.officer-structure .officer-cards .officer-position {
+    padding-top: 10px;
+    min-height: 2em;
 }
 
 .officer-structure .officer-cards .card {

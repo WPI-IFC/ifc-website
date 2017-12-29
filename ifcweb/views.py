@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User
 
+from officers.models import Biography, Blog
+
 def index(request):
     return render(request, "index.html")
 
@@ -23,7 +25,9 @@ def about(request):
     ]
     for group in groups:
         try:
-            context['officers'].append((User.objects.filter(groups__name=group)[0], group))
+            user = User.objects.filter(groups__name=group)[0]
+            blog = Blog.objects.get(current_owner=user)
+            context['officers'].append((user, Biography.objects.filter(user=user)[0].headshot, group, blog.slug))
         except IndexError:
             print(group)
             context['errors'] = True
