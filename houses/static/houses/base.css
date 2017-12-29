@@ -80,7 +80,7 @@ h2 {
 
 .nav-bar{
     font-family: 'Roboto Mono', monospace;  
-    background: #2A4669;
+    background: #002B54;
     height: 4em;
     overflow: hidden;
     white-space: nowrap;
@@ -136,7 +136,7 @@ h2 {
 }
 
 .nav-bar li:hover{
-    background: #213853;
+    background: rgb(0, 31, 60);
 }
 
 .content-container {
