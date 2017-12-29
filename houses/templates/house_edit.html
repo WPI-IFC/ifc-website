@@ -11,7 +11,7 @@
 <body>
     {% include 'header.html' %}
     <div class='content-container'>
-        <form action="POST">
+        <form method="POST">
             {% csrf_token %}
             {{ form.as_p }}
             <button type="submit">Save</button>

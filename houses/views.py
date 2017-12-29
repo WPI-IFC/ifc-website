@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse, Http404
 from django.contrib.auth.decorators import login_required
 
@@ -40,13 +40,15 @@ def house_edit(request, house):
         raise Http404("Invalid house request: {}".format(house))
 
     if request.method == 'POST':
-        form = HouseForm(request.POST)
+        form = HouseForm(request.POST, instance=org_obj)
         if form.is_valid():
             form.save() # NOTE(Tom): may want to add a timestamp feature in the future
+            return redirect('house-landing', house=house)
 
-    if request.user.groups.filter(name=org.english_name).exists():
-        context['form'] = HouseForm(instance=org)
-        context['house'] = org
-        return render(request, 'house_edit.html', context)
-    else:
-        return HttpResponse(status=403) # TODO(Tom): Make this render a custom reponse
+    elif request.method == 'GET':
+        if request.user.groups.filter(name=org.english_name).exists():
+            context['form'] = HouseForm(instance=org)
+            context['house'] = org
+            return render(request, 'house_edit.html', context)
+        else:
+            return HttpResponse(status=403) # TODO(Tom): Make this render a custom reponse
