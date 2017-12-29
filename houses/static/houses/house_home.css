@@ -24,6 +24,7 @@
     margin: 0;
     padding-top: 5px;
     padding-bottom: 5px;
+    break-inside: avoid;
     text-align: center;
 }
 
