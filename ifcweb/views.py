@@ -1,10 +1,13 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User
 
-from officers.models import Biography, Blog
+from officers.models import Biography, Blog, Post
 
 def index(request):
-    return render(request, "index.html")
+    context = {}
+    context['posts'] = Post.objects.all()[:5] # Arbitrary number of
+                                              # most recent posts
+    return render(request, "index.html", context)
 
 def about(request):
     context = {'officers': [], 'errors': False}

@@ -22,6 +22,23 @@
         <h1>
             Main page
         </h1>
+        <div class="dynamic-content">
+            <br>
+            <h2>Recent Posts</h2>
+                <ul class="posts">
+                    {% if posts|length > 0 %}
+                    {% for post in posts %}
+                        <li class="post">
+                            <h1>{{ post.title }}</h1>
+                            <h2>{{ post.published|date:"M, D d, Y" }} - {{ post.author.first_name }} {{ post.author.last_name }} to {{ post.blog.position_title }}</h2>
+                            <p class="post-preivew">{{ post.body|truncatewords:50 }}</p>
+                        </li>
+                    {% endfor %}
+                    {% else %}
+                    <h3>There are no posts</h3>
+                    {% endif %}
+                </ul>
+            </div>
     </div>
     {% include "footer.html" %}
 </body>
