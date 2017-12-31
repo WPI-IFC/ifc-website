@@ -29,6 +29,21 @@
     margin-bottom: 2em;
 }
 
+.content-container .static-content h3 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.content-container .static-content .biography {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.content-container .static-content .biography p {
+    text-indent: 2em;
+}
+
 .content-container .horizontal-divider {
     display: block;
     width: 80%;
