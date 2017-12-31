@@ -22,3 +22,41 @@
     font-weight: bold;
     font-size: 40px;
 }
+
+/* Dynamic Content copy/pase from officers/base.css */
+.content-container .posts h3 {
+    color: rgb(179, 179, 179);
+    font-weight: bold;
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    font-size: 25px;
+    padding: 10% 0;
+}
+
+.content-container .dynamic-content .posts {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 7px;
+}
+
+.content-container .dynamic-content .posts .post {
+    padding-top: 1.5em;
+    padding-bottom: .5em;
+    padding-left: 10px;
+    border-bottom: 1px dashed #999999;
+}
+
+.content-container .dynamic-content .posts .post h1 {
+    font-size: 25px;
+}
+
+.content-container .dynamic-content .posts .post h2 {
+    font-size: 15px;
+    color: rgb(131, 131, 131) !important;
+}
+
+/* Dynamic content specific to home.css */
+.content-container .dynamic-content > h2 {
+    margin-left: 20px;
+}
