@@ -1,6 +1,6 @@
 .featured-picture {
     position: relative;
-    margin: auto;
+    margin: -10px -10px auto -10px;
     overflow: hidden;
 }
 
@@ -10,6 +10,7 @@
     margin-bottom: -15%;
     max-width: 100%;
     display: block;
+    transform: scale(1.1);
 }
 
 .call-to-text{
@@ -18,7 +19,7 @@
     text-align: right;
     bottom: 45%;
     right: 5%;
-    color: #d6d6d6;
+    color: #e4e4e4;
     font-weight: bold;
     font-size: 40px;
 }
