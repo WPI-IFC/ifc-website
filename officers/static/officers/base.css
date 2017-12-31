@@ -1,0 +1,61 @@
+.title-and-name {
+    margin-left: 1.5em;
+}
+
+.title-and-name .name {
+    color: rgb(170, 170, 170);
+}
+
+.content-container .posts h3 {
+    color: rgb(179, 179, 179);
+    font-weight: bold;
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    font-size: 25px;
+    padding: 10% 0;
+}
+
+.content-container .headshot {
+    max-height: 200px;
+    max-width: 200px;
+    height: auto;
+    width: auto;
+}
+
+.content-container .static-content {
+    display: flex;
+    margin: 1em 1.5em;
+    margin-bottom: 2em;
+}
+
+.content-container .horizontal-divider {
+    display: block;
+    width: 80%;
+    /*margin-top: 30px;
+    margin-bottom: 7px;*/
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #999999;
+}
+
+.content-container .dynamic-content .posts {
+    width: 85%;
+    margin: auto;
+}
+
+.content-container .dynamic-content .posts .post {
+    padding-top: 1.5em;
+    padding-bottom: .5em;
+    padding-left: 10px;
+    border-bottom: 1px dashed #999999;
+}
+
+.content-container .dynamic-content .posts .post h1 {
+    font-size: 25px;
+}
+
+.content-container .dynamic-content .posts .post h2 {
+    font-size: 15px;
+    color: rgb(131, 131, 131) !important;
+}
