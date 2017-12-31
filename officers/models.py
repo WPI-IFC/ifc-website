@@ -41,7 +41,7 @@ class Post(models.Model):
         Blog,
         on_delete=models.CASCADE,
     )
-    published = models.DateField()
+    published = models.DateTimeField()
     last_edit = models.DateTimeField()
     author = models.ForeignKey(
         settings.AUTH_USER_MODEL,
@@ -52,10 +52,10 @@ class Post(models.Model):
                                                      # this provides some backup
     title = models.CharField(max_length=100)
     body = models.TextField()
-    attachments = models.FileField()
+    attachments = models.FileField(blank=True)
 
     def __str__(self):
         return self.blog.position_title + " - " + self.title
 
     class Meta():
-        ordering = ("published",)
+        ordering = ("-published",)

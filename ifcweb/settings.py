@@ -113,7 +113,7 @@ LOGIN_REDIRECT_URL = 'index'
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'EST'
 
 USE_I18N = True
 

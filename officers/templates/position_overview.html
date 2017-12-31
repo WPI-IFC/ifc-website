@@ -12,9 +12,29 @@
 <body>
     {% include 'header.html' %}
     <div class="content-container">
-        <h1>{{ position }}</h1>
-        <h2>{{ user.first_name }} {{ user.last_name }}</h2>
-        <img src="{{ biography.headshot.url }}" alt="{{ user.username }}">
+        <div class="static-content">
+            <img class="headshot" src="{{ biography.headshot.url }}" alt="{{ user.username }}">
+            <div class="title-and-name">
+                <h1>{{ position }}</h1>
+                <h2 class="name">{{ user.first_name }} {{ user.last_name }}</h2>
+            </div>
+        </div>
+        <span class="horizontal-divider"></span>
+        <div class="dynamic-content">
+            <ul class="posts">
+                {% if posts|length > 0 %}
+                {% for post in posts %}
+                    <li class="post">
+                        <h1>{{ post.title }}</h1>
+                        <h2>{{ post.published|date:"M, D d, Y" }}</h2>
+                        <p class="post-preivew">{{ post.body|truncatewords:50 }}</p>
+                    </li>
+                {% endfor %}
+                {% else %}
+                <h3>There are no posts from the {{ position }}</h3>
+                {% endif %}
+            </ul>
+        </div>
     </div>
     {% include 'footer.html' %}
 </body>
