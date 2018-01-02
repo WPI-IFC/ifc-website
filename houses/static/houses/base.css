@@ -82,7 +82,6 @@ h2 {
     font-family: 'Roboto Mono', monospace;  
     background: #002B54;
     height: 4em;
-    overflow: hidden;
     white-space: nowrap;
     display: flex;
     justify-content: space-between;
@@ -113,6 +112,37 @@ h2 {
     text-align: center;
     color: #E4E4E4;
     text-decoration: none;
+}
+
+.nav-bar .drop-down {
+    position: relative;
+}
+
+.nav-bar .drop-down .drop-down-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    background: #002B54;
+    top: 4em;
+    margin-left: -.75em;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    z-index: 1;
+}
+
+.nav-bar .drop-down .drop-down-content:hover {
+    background: rgb(0, 31, 60);
+}
+
+.nav-bar .drop-down .drop-down-content a {
+    display: block;
+    position: relative;
+    color: inherit;
+}
+
+.nav-bar .drop-down:hover .drop-down-content {
+    display: block;
 }
 
 @media screen and (max-width: 425px){

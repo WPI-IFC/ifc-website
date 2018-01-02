@@ -11,6 +11,17 @@
         <a href="/house"><li>Houses</li></a>
         <li>Events</li>
         <a target="_blank" href="https://wpi.campuslabs.com/engage/organization/interfraternity-council"><li>TechSync</li></a>
+        {% if request.user.is_authenticated %}
+        <li class="drop-down">
+        <div>
+            <span>{{ request.user.username }} &dharr;</span>
+            <div class="drop-down-content">
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+        </li>
+        {% else %}
         <a href="/login"><li>Login</li></a>
+        {% endif %}
     </ul>
 </div>
