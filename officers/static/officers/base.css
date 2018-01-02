@@ -67,6 +67,14 @@
     border-bottom: 1px dashed #999999;
 }
 
+.content-container .dynamic-content .posts .post a {
+    color: inherit;
+}
+
+.content-container .dynamic-content .posts .post a:hover {
+    text-decoration: underline;
+}
+
 .content-container .dynamic-content .posts .post h1 {
     font-size: 25px;
 }
