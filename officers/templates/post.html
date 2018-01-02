@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ post.title }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'houses/base.css' %}">
+    <link rel="stylesheet" href="{% static 'officers/base.css' %}">
+    <link rel="stylesheet" href="{% static 'officers/article.css' %}">
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="content-container">
+        {% if request.user == post.author %}
+        <span class="edit">[<a href="edit">edit</a>]</span>
+        {% endif %}
+        <h1 class="post-title">{{ post.title }}</h1>
+        <h2 class="post-author">{{ post.author_string }}</h2>
+        <p class="post-body">{{ post.body|linebreaks }}</p>
+        {% if post.attachments %}
+        <a class="post-attachments" href="{{ post.attachments.url }}">{{ post.attachments }}</a>
+        {% endif %}
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

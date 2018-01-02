@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ post.title }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'houses/base.css' %}">
+    <link rel="stylesheet" href="{% static 'officers/base.css' %}">
+    <link rel="stylesheet" href="{% static 'officers/article.css' %}">
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="content-container">
+        <form method="POST" enctype="multipart/form-data">
+            {%csrf_token%}
+            {% for error in form.non_field_errors %}
+            <div class="form-error">
+                {{error}}
+            </div>
+            {% endfor %}
+            {% for field in form %}
+
+            <div class="field-error">
+                {{field.errors}}
+            </div>
+
+            <div class="post-{{ field.label|slugify }}">
+                {{ field.label_tag }}
+                {{ field }}
+            </div>
+            {% endfor %}
+            <button action="submit">Save</button>
+        </form>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

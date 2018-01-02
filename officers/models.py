@@ -1,6 +1,7 @@
 from django.db import models
 from django.conf import settings
 from django.utils.text import slugify
+from django.utils.timezone import now
 
 class Biography(models.Model):
     user = models.OneToOneField(
@@ -56,6 +57,11 @@ class Post(models.Model):
 
     def __str__(self):
         return self.blog.position_title + " - " + self.title
+
+    def save(self, *args, **kwargs):
+        self.last_edit = now()
+        super(Post, self).save(*args, **kwargs)
+
 
     class Meta():
         ordering = ("-published",)

@@ -13,4 +13,14 @@ urlpatterns = [
         view=views.position_overview,
         name="officers-overview"
     ),
+    url(
+        regex=r'^(?P<slug>[\D]+)/(?P<id>[\d]+)/$',
+        view=views.get_post,
+        name='officers-view-post'
+    ),
+    url(
+        regex=r'^(?P<slug>[\D]+)/(?P<id>[\d]+)/edit/$',
+        view=views.edit_post,
+        name='officers-edit-post'
+    ),
 ]
