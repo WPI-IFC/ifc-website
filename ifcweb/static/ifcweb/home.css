@@ -61,3 +61,11 @@
 .content-container .dynamic-content > h2 {
     margin-left: 20px;
 }
+
+.content-container .dynamic-content a {
+    color: inherit;
+}
+
+.content-container .dynamic-content a:hover {
+    text-decoration: underline;
+}

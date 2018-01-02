@@ -29,7 +29,7 @@
                     {% if posts|length > 0 %}
                     {% for post in posts %}
                         <li class="post">
-                            <h1>{{ post.title }}</h1>
+                            <h1><a href="about/officer/{{ post.blog.slug }}/{{ post.id }}">{{ post.title }}</a></h1>
                             <h2>{{ post.published|date:"M, D d, Y" }} - {{ post.author.first_name }} {{ post.author.last_name }} to {{ post.blog.position_title }}</h2>
                             <p class="post-preivew">{{ post.body|truncatewords:50 }}</p>
                         </li>
