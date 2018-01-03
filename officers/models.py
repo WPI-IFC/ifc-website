@@ -15,7 +15,7 @@ class Biography(models.Model):
         return self.user.username
 
     class Meta():
-        verbose_name_plural = "bibliographies"
+        verbose_name_plural = "biographies"
 
 
 class Blog(models.Model):
