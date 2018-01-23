@@ -72,6 +72,10 @@
     color: #333333;
 }
 
+.nav-bar .drop-down-content:hover {
+    color: #333333;
+}
+
 @media screen and (max-width: 425px){
     .content-container {
         width: 100%;
