@@ -1,3 +1,17 @@
 .content-container .edit a {
     color: blue;
 }
+
+.content-container .post-container {
+    padding-left: 10px;
+}
+
+.content-container .post-container .post-author {
+    margin-bottom: .75em;
+    color: rgb(141, 141, 141);
+}
+
+.content-container .post-container p {
+    padding-left: 10px;
+    padding-right: 20px;
+}

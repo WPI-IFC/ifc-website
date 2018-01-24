@@ -16,12 +16,14 @@
         {% if request.user == post.author %}
         <span class="edit">[<a href="edit">edit</a>]</span>
         {% endif %}
-        <h1 class="post-title">{{ post.title }}</h1>
-        <h2 class="post-author">{{ post.author_string }}</h2>
-        <p class="post-body">{{ post.body|linebreaks }}</p>
-        {% if post.attachments %}
-        <a class="post-attachments" href="{{ post.attachments.url }}">{{ post.attachments }}</a>
-        {% endif %}
+        <div class="post-container">
+            <h1 class="post-title">{{ post.title }}</h1>
+            <h2 class="post-author">{{ post.author_string }}</h2>
+            <p class="post-body">{{ post.body|linebreaks }}</p>
+            {% if post.attachments %}
+            <a class="post-attachments" href="{{ post.attachments.url }}">{{ post.attachments }}</a>
+            {% endif %}
+        </div>
     </div>
     {% include 'footer.html' %}
 </body>
