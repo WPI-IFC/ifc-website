@@ -1,0 +1,31 @@
+.post-title, .post-body {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+.content-container #id_title {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #8a8a8a;
+    margin-top: .75em;
+    margin-bottom: 1em;
+    padding: 2px .5em;
+}
+
+.content-container #id_title:focus {
+    box-shadow: 0 0 2px black;
+}
+
+.content-container #id_body {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #8a8a8a;
+    margin-top: .75em;
+    margin-bottom: 1em;
+    padding: 2px .5em;
+}
+
+.content-container #id_body:focus {
+    box-shadow: 0 0 2px black;
+}
