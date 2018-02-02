@@ -24,8 +24,15 @@
     margin-top: .75em;
     margin-bottom: 1em;
     padding: 2px .5em;
+    width: 100%;
 }
 
 .content-container #id_body:focus {
     box-shadow: 0 0 2px black;
+}
+
+.content-container .post-attachments {
+    display: block;
+    width: 60%;
+    margin: auto;
 }
