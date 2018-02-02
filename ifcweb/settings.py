@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'ifcweb',
     'houses',
     'officers',
+    'events',
 ]
 
 MIDDLEWARE = [
