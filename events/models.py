@@ -9,6 +9,9 @@ class BaseEvent(models.Model):
     description = models.TextField()
     splash_img = models.ImageField(upload_to='event_splash/')
 
+    def __str__(self):
+        return self.title + " - " + str(self.d_time)
+
     class Meta:
         abstract = True
 

@@ -6,10 +6,14 @@ def event_index(request):
     context = {}
     return render(request, "events_overview.html", context)
 
-def event_info(request, event_id):
+
+def officer_event_info(request, event_id):
     context = {}
-    event = get_object_or_404(BaseEvent, id=event_id)
-    if type(event) is OfficerEvent:
-        return redner(request, "single_event.html", context)
-    elif type(event) is HouseEvent:
-        return redner(request, "single_event.html", context)
+    event = get_object_or_404(OfficerEvent, id=event_id)
+    return render(request, "single_event.html", context)
+
+
+def house_event_info(request, event_id):
+    context = {}
+    event = get_object_or_404(HouseEvent, id=event_id)
+    return render(request, "single_event.html", context)
