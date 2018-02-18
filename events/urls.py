@@ -23,8 +23,8 @@ urlpatterns = [
         name="event-officer-overview"
     ),
     url(
-        regex=r'^houses/(?P<event_id>[\d]+)/$',
-        view=views.house_event_info,
-        name="event-houses-overview"
+        regex=r'^chapter/(?P<event_id>[\d]+)/$',
+        view=views.chapter_event_info,
+        name="event-chapter-overview"
     ),
 ]
