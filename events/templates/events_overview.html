@@ -15,6 +15,42 @@
             <div class="calendar-container">
                 Placeholder
             </div>
+			<ul class="event-columns">
+				<li>
+				<div class="dynamic-content officer-events">
+				<h2>Recent Posts</h2>
+					<ul class="posts">
+						{% if posts|length > 0 %}
+						{% for post in posts %}
+							<li class="post">
+								<h1><a href="events/officer/{{ event.id }}">{{ event.title }}</a></h1>
+								<h2>{{ event.dtime|date:"M, D d, Y @ h:i" }} - Added By {{ officer_owner }}</h2>
+							</li>
+						{% endfor %}
+						{% else %}
+						<h3>There are no IFC events</h3>
+						{% endif %}
+					</ul>
+				</div>
+				</li>
+				<li>
+				<div class="dynamic-content chapter-events">
+					<h2>Recent Posts</h2>
+						<ul class="posts">
+							{% if posts|length > 0 %}
+							{% for post in posts %}
+								<li class="post">
+									<h1><a href="events/chapter/{{ event.id }}">{{ event.title }}</a></h1>
+									<h2>{{ event.dtime|date:"M, D d, Y @ h:i" }} - Added By {{ event.owner.english_name }}</h2>
+								</li>
+							{% endfor %}
+							{% else %}
+							<h3>There are no chapter events</h3>
+							{% endif %}
+						</ul>
+					</div>
+				</li>
+			</ul>
         </div>
     {% include 'footer.html' %}
 </body>
