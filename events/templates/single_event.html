@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
     <link rel="stylesheet" href="{% static 'houses/base.css' %}">
+    <link rel="stylesheet" href="{% static 'events/event_page.css' %}">
     <title>Events</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
     <div class="content-container">
         <div class="featured-content">
             <div class="featured-image">
-                Event image goes here
+                <img src="{{ splash.url }}">
             </div>
         </div>
         <div class="body-content">

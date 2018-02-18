@@ -1,0 +1,5 @@
+.content-container .featured-content .featured-image img{
+    min-width: 100%;
+    margin: -10px -10px auto -10px;
+    overflow: hidden;
+}
