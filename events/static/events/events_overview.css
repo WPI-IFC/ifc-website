@@ -1,0 +1,34 @@
+.content-container .calendar-container {
+	margin-bottom: 1em;
+}
+
+.content-container .event-columns > li {
+	display: inline-block;
+	width: 45%;
+	min-width: 18em;
+	max-width: 100%;
+	break-inside: avoid;
+	margin-bottom: 2em;
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+.content-container .event-column-title {
+	border-bottom: 1px solid #8a8a8a;
+	width: 80%;
+	margin-bottom: .5em;
+	padding-bottom: .25em;
+}
+
+.content-container .events li {
+	margin-bottom: 1em;
+}
+
+.content-container .event-columns a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.content-container .event-columns a:hover {
+	text-decoration: underline;
+}

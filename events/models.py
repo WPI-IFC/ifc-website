@@ -14,6 +14,7 @@ class BaseEvent(models.Model):
 
     class Meta:
         abstract = True
+        ordering = ("-d_time",)
 
 class OfficerEvent(BaseEvent):
     owner = models.ForeignKey(
