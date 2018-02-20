@@ -1,9 +1,14 @@
+from datetime import datetime
+
 from django.shortcuts import render, get_object_or_404
 
 from .models import BaseEvent, OfficerEvent, HouseEvent
 
 def event_index(request):
     context = {}
+    #TODO(Tom): Change to greater than current datetime
+    context['ifc_events'] = OfficerEvent.objects.filter(d_time__lt=datetime.now()).reverse()
+    context['chapter_events'] = HouseEvent.objects.filter(d_time__lt=datetime.now()).reverse()
     return render(request, "events_overview.html", context)
 
 

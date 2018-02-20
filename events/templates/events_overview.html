@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
     <link rel="stylesheet" href="{% static 'houses/base.css' %}">
+    <link rel="stylesheet" href="{% static 'events/events_overview.css' %}">
     <title>Events</title>
 </head>
 <body>
@@ -18,13 +19,15 @@
 			<ul class="event-columns">
 				<li>
 				<div class="dynamic-content officer-events">
-				<h2>Recent Posts</h2>
-					<ul class="posts">
-						{% if posts|length > 0 %}
-						{% for post in posts %}
-							<li class="post">
-								<h1><a href="events/officer/{{ event.id }}">{{ event.title }}</a></h1>
-								<h2>{{ event.dtime|date:"M, D d, Y @ h:i" }} - Added By {{ officer_owner }}</h2>
+				<h2 class="event-column-title">Upcoming IFC Events</h2>
+					<ul class="events">
+						{% if ifc_events|length > 0 %}
+						{% for event in ifc_events %}
+							<li class="event">
+								<h2><a href="officer/{{ event.id }}">{{ event.title }}</a></h2>
+								<h3>{{ event.d_time|date:"M, D d, Y - h:i" }}
+									<br>
+									Added By {{ event.owner.first_name }} {{ event.owner.last_name }}</h3>
 							</li>
 						{% endfor %}
 						{% else %}
@@ -35,13 +38,15 @@
 				</li>
 				<li>
 				<div class="dynamic-content chapter-events">
-					<h2>Recent Posts</h2>
-						<ul class="posts">
-							{% if posts|length > 0 %}
-							{% for post in posts %}
-								<li class="post">
-									<h1><a href="events/chapter/{{ event.id }}">{{ event.title }}</a></h1>
-									<h2>{{ event.dtime|date:"M, D d, Y @ h:i" }} - Added By {{ event.owner.english_name }}</h2>
+					<h2 class="event-column-title">Upcoming Chapter Events</h2>
+						<ul class="events">
+							{% if chapter_events|length > 0 %}
+							{% for event in chapter_events %}
+								<li class="event">
+									<h2><a href="chapter/{{ event.id }}">{{ event.title }}</a></h2>
+									<h3>{{ event.d_time|date:"M, D d, Y - h:i" }}
+										<br>
+										Added By {{ event.owner.english_name }}</h3>
 								</li>
 							{% endfor %}
 							{% else %}
