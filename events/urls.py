@@ -14,7 +14,7 @@ urlpatterns = [
         view=RedirectView.as_view(pattern_name="events-index", permanent=False)
     ),
     url(
-        regex=r'^houses/$',
+        regex=r'^chapter/$',
         view=RedirectView.as_view(pattern_name="events-index", permanent=False)
     ),
     url(
