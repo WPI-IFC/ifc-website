@@ -1,5 +1,9 @@
 .content-container .featured-content .featured-image img{
+    /*TODO: Featured image whole container
     min-width: 100%;
     margin: -10px -10px auto -10px;
-    overflow: hidden;
+    overflow: hidden;*/
+    display: block;
+    max-width: 50%;
+    margin: auto;
 }
