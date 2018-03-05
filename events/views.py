@@ -15,6 +15,9 @@ def event_index(request):
 def officer_event_info(request, event_id):
     context = {"type": "officer"}
     event = get_object_or_404(OfficerEvent, id=event_id)
+    context['title'] = event.title
+    context['description'] = event.description
+    context['time'] = event.d_time
     context['splash'] = event.splash_img
     return render(request, "single_event.html", context)
 
@@ -22,4 +25,8 @@ def officer_event_info(request, event_id):
 def chapter_event_info(request, event_id):
     context = {"type": "house"}
     event = get_object_or_404(HouseEvent, id=event_id)
+    context['title'] = event.title
+    context['description'] = event.description
+    context['time'] = event.d_time
+    context['splash'] = event.splash_img
     return render(request, "single_event.html", context)

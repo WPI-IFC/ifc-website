@@ -24,7 +24,7 @@
 						{% if ifc_events|length > 0 %}
 						{% for event in ifc_events %}
 							<li class="event">
-								<h2><a href="officer/{{ event.id }}">{{ event.title }}</a></h2>
+								<h2><a href="officers/{{ event.id }}">{{ event.title }}</a></h2>
 								<h3>{{ event.d_time|date:"M, D d, Y - h:i" }}
 									<br>
 									Added By {{ event.owner.first_name }} {{ event.owner.last_name }}</h3>
