@@ -1,0 +1,104 @@
+.content-container form {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5em;
+}
+
+.content-container #id_english_name {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #8a8a8a;
+    margin-top: .75em;
+    margin-bottom: 1em;
+    padding: 2px .5em;
+    width: 30%;
+}
+
+.content-container #id_english_name:focus {
+    box-shadow: 0 0 2px black;
+}
+
+.content-container #id_nickname {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #8a8a8a;
+    margin-top: .75em;
+    margin-bottom: 1em;
+    padding: 2px .5em;
+    width: 30%;
+}
+
+.content-container #id_nickname:focus {
+    box-shadow: 0 0 2px black;
+}
+
+.content-container #id_primary_color {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #8a8a8a;
+    margin-top: .75em;
+    margin-bottom: 1em;
+    padding: 2px .5em;
+    width: 30%;
+}
+
+.content-container #id_primary_color:focus {
+    box-shadow: 0 0 2px black;
+}
+
+.content-container #id_secondary_color {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #8a8a8a;
+    margin-top: .75em;
+    margin-bottom: 1em;
+    padding: 2px .5em;
+    width: 30%;
+}
+
+.content-container #id_secondary_color:focus {
+    box-shadow: 0 0 2px black;
+}
+
+.content-container #id_motto {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #8a8a8a;
+    margin-top: .75em;
+    margin-bottom: 1em;
+    padding: 2px .5em;
+    width: 70%;
+}
+
+.content-container #id_motto:focus {
+    box-shadow: 0 0 2px black;
+}
+
+.content-container #id_values {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #8a8a8a;
+    margin-top: .75em;
+    margin-bottom: 1em;
+    padding: 2px .5em;
+    width: 70%;
+}
+
+.content-container #id_values:focus {
+    box-shadow: 0 0 2px black;
+}
+
+.content-container #id_extra_info {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #8a8a8a;
+    margin-top: .75em;
+    margin-bottom: 1em;
+    padding: 2px .5em;
+    width: 70%;
+}
+
+.content-container #id_extra_info:focus {
+    box-shadow: 0 0 2px black;
+}
