@@ -7,13 +7,29 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'houses/base.css' %}">
     <link rel="stylesheet" href="{% static 'houses/single_house.css' %}">
+    <link rel="stylesheet" href="{% static 'houses/house_edit.css' %}">
 </head>
 <body>
     {% include 'header.html' %}
     <div class='content-container'>
         <form method="POST" enctype="multipart/form-data">
             {% csrf_token %}
-            {{ form.as_p }}
+            {% for error in form.non_field_errors %}
+            <div class="form-error">
+                {{error}}
+            </div>
+            {% endfor %}
+            {% for field in form %}
+
+            <div class="field-error">
+                {{field.errors}}
+            </div>
+
+            <div class="chapter-{{ field.label|slugify }}">
+                {{ field.label_tag }}
+                {{ field }}
+            </div>
+            {% endfor %}
             <button type="submit">Save</button>
         </form>
     </div>
@@ -27,6 +43,16 @@
         .nav-bar li:hover{
             background: {{ house.secondary_color }} !important;
         }
+        
+        .nav-bar .drop-down-content {
+            background: {{ house.primary_color }} !important;
+            color: #ffffff;
+        }
+
+        .nav-bar .drop-down-content:hover {
+            background: {{ house.secondary_color }} !important;
+        }
+    </styl
     </style>
 </body>
 </html>

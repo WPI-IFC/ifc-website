@@ -25,6 +25,8 @@ def route_house(request, house):
             break
     if not "house" in context:
         raise Http404
+    if request.user.groups.filter(name=context["house"].english_name).exists():
+        context['has_perms'] = True        
     return render(request, "single_house.html", context)
 
 
