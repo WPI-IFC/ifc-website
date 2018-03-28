@@ -30,6 +30,9 @@
     </style>
     {% include "header.html" %}
     <div class="content-container">
+        {% if has_perms %}
+        <span class="edit">[<a href="edit">edit</a>]</span>
+        {% endif %}
         <div class="house-title">
             <h1>{{house.english_name}}</h1>
             <h2>{{house.nickname}}</h2>
