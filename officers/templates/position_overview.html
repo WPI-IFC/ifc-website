@@ -23,6 +23,11 @@
                 <p>{{ biography.content|linebreaks }}</p>
             </div>
         </div>
+        {% if request.user == user %}
+        <div class="new-post">
+            <a href="new"><div class="button">+ New Post</div></a>
+        </div>
+        {% endif %}
         <span class="horizontal-divider"></span>
         <div class="dynamic-content">
             <ul class="posts">
