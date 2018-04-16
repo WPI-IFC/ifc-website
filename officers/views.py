@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from django.db.models.query import QuerySet
 from django.http import HttpResponse
+from django.utils.timezone import now
 
 from .models import Blog, Biography, Post
 from .forms import PostForm
@@ -19,6 +20,29 @@ def position_overview(request, slug):
     context['position'] = blog.position_title
     context['posts'] = Post.objects.filter(blog=blog)
     return render(request, "position_overview.html", context)
+
+@login_required
+def new_post(request, slug):
+    context = {}
+
+    blog = get_object_or_404(Blog, slug=slug)
+    if blog.current_owner != request.user:
+        return HttpResponse(status=403) # TODO(Tom): Make this render a custom repsonse
+    
+    if request.method == 'GET':
+        context['form'] = PostForm()
+        context['title'] = "New Post"
+        return render(request, "edit_post.html", context)
+    elif request.method == 'POST':
+        form = PostForm(request.POST, request.FILES)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.blog = blog
+            post.published = now()
+            post.author = request.user
+            post.author_string = request.user.first_name + " " + request.user.last_name
+            form.save()
+            return redirect('officers-view-post', slug=slug, id=post.id)
 
 def get_post(request, slug, id):
     context = {}
@@ -40,7 +64,7 @@ def edit_post(request, slug, id):
     if request.method == 'GET':
         if post.author == request.user:
             context['form'] = PostForm(instance=post)
-            context['post'] = post
+            context['title'] = post.title
             return render(request, "edit_post.html", context)
         else:
             return HttpResponse(status=403) # TODO(Tom): Make this render a custom reponse
