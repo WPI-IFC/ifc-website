@@ -6,8 +6,10 @@
     padding-bottom: .5em;
 }
 
-.content-container p {
-    padding-bottom: .25em
+.content-container .mission {
+    padding-bottom: 1em;
+    width: 50em;
+    margin: auto;
 }
 
 .officer-structure img {

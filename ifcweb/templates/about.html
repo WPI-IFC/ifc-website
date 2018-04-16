@@ -14,13 +14,26 @@
     <div class="content-container">
         <h1>WPI's Interfraternity Council</h1>
         <h2>Mission</h2>
-        <p>
-            Content
+        <p class="mission">
+                We, the Interfraternity Council, exist to promote the shared interests
+                and values of our member fraternities: leadership, service,
+                brotherhood, and scholarship. We believe in Fraternity and that the
+                shared values of Fraternity drive the IFC to create better communities,
+                better chapters, and better men.
+        </p>
+        <p class="mission">
+                We work to advance the academic mission of the host institution, to
+                enable fraternal organizations to grow and thrive through
+                collaboration and teamwork, to provide an outlet for self-governance
+                and accountability, and to model and teach ethical leadership. In a
+                spirit of mutual support and betterment, we, the men of the
+                Interfraternity Council, pledge to elevate the Ritual and the values of
+                the member organizations.
         </p>
         <div class="officer-structure">
             <h2>Structure</h2>
+            <img src="{% static 'ifcweb/ifc-orgchart.png' %}" alt="org chart">            
             <p>
-                <img src="{% static 'ifcweb/ifc-orgchart.png' %}" alt="org chart">
                 <div class="officer-cards">
                     {% if not errors %}
                         {% for user, headshot, position, slug in officers %}
