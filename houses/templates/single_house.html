@@ -31,7 +31,9 @@
     {% include "header.html" %}
     <div class="content-container">
         {% if has_perms %}
-        <span class="edit">[<a href="edit">edit</a>]</span>
+        <span class="edit">[<a href="edit">edit</a></span>
+        |
+        <span class="create-event"><a href="/events/chapter/{{ house.lower_repr }}/new">+ New Event]</a></span>
         {% endif %}
         <div class="house-title">
             <h1>{{house.english_name}}</h1>

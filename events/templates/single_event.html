@@ -24,5 +24,33 @@
         </div>
     </div>
     {% include 'footer.html' %}
+    {% if type == "chapter" %}
+    <style>
+        .nav-bar {
+            background: {{ house.primary_color }} !important;
+        }
+
+        .nav-bar li:hover{
+            background: {{ house.secondary_color }} !important;
+        }
+        
+        .nav-bar .drop-down-content {
+            background: {{ house.primary_color }} !important;
+            color: #ffffff;
+        }
+
+        .nav-bar .drop-down-content:hover {
+            background: {{ house.secondary_color }} !important;
+        }
+
+        .nav-bar li:hover{
+            color: #333333;
+        }
+
+        .nav-bar .drop-down-content:hover {
+            color: #333333;
+        }
+    </style>
+    {% endif %}
 </body>
 </html>
