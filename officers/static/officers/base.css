@@ -44,24 +44,29 @@
     text-indent: 2em;
 }
 
-.content-container .new-post {
+.content-container .new-content {
+    display: flex;
+    justify-content: center;
+}
+
+.content-container .create-content {
+    display: inline-block;
     background: rgb(0,43,84);
     align-items: center;
     width: 8em;
-    margin: auto;
+    margin: 0 5px .5em 5px;
     text-align: center;
     border-radius: 5px;
 }
 
-.content-container .new-post .button {
+.content-container .create-content .button {
     font-weight: bold;
     font-size: 20px;
     color: white;
     padding: .5em 0;
-    margin-bottom: 1em;
 }
 
-.content-container .new-post .button:hover {
+.content-container .create-content .button:hover {
     box-shadow: 0 0 5px rgb(51, 51, 51);
     border-radius: 5px;
 }

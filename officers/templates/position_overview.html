@@ -23,11 +23,18 @@
                 <p>{{ biography.content|linebreaks }}</p>
             </div>
         </div>
-        {% if request.user == user %}
-        <div class="new-post">
-            <a href="new"><div class="button">+ New Post</div></a>
+        <div class="new-content">
+            {% if request.user == user %}
+            <div class="create-content" id="post">
+                <a href="new"><div class="button">+ New Post</div></a>
+            </div>
+            {% if perms.events.add_officerevent %}
+            <div class="create-content" id="event">
+                <a href="/events/officer/new"><div class="button">+ New Event</div></a>
+            </div>
+            {% endif %}
+            {% endif %}
         </div>
-        {% endif %}
         <span class="horizontal-divider"></span>
         <div class="dynamic-content">
             <ul class="posts">

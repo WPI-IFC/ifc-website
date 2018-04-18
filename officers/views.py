@@ -15,6 +15,7 @@ def officer_index(request):
 def position_overview(request, slug):
     context = {}
     blog = get_object_or_404(Blog, slug=slug)
+    context['perm'] = request.user.get_all_permissions()
     context['user'] = blog.current_owner
     context['biography'] = Biography.objects.get(user=blog.current_owner)
     context['position'] = blog.position_title
