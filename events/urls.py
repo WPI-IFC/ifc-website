@@ -23,6 +23,15 @@ urlpatterns = [
         name="event-officer-new"
     ),
     url(
+        regex=r'^chapter/(?P<chapter>[\D]+)/new/$',
+        view=views.new_chapter_event,
+        name="event-chapter-new"
+    ),
+    url(
+        regex=r'^chapter/(?P<chapter>[\D]+)/$',
+        view=RedirectView.as_view(pattern_name="events-index", permanent=False)
+    ),
+    url(
         regex=r'^officers/(?P<event_id>[\d]+)/$',
         view=views.officer_event_info,
         name="event-officer-overview"
