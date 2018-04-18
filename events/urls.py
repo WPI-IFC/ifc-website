@@ -18,6 +18,11 @@ urlpatterns = [
         view=RedirectView.as_view(pattern_name="events-index", permanent=False)
     ),
     url(
+        regex=r'^officers/new/$',
+        view=views.new_officer_event,
+        name="event-officer-new"
+    ),
+    url(
         regex=r'^officers/(?P<event_id>[\d]+)/$',
         view=views.officer_event_info,
         name="event-officer-overview"
