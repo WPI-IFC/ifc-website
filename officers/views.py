@@ -28,7 +28,7 @@ def new_post(request, slug):
 
     blog = get_object_or_404(Blog, slug=slug)
     if blog.current_owner != request.user:
-        return HttpResponse(status=403) # TODO(Tom): Make this render a custom repsonse
+        return HttpResponse(status=403) # TODO(Tom): Make this render a custom response
     
     if request.method == 'GET':
         context['form'] = PostForm()
@@ -60,16 +60,14 @@ def edit_post(request, slug, id):
     # This is how we make sure that the url is valid
     # First check that the blog exists
     blog = get_object_or_404(Blog, slug=slug)
+    if blog.current_owner != request.user:
+        return HttpResponse(status=403) # TODO(Tom): Make this render a custom response
     # Then check if the post id belongs to that blog
     post = get_object_or_404(Post, id=id, blog=blog)
     if request.method == 'GET':
-        if post.author == request.user:
-            context['form'] = PostForm(instance=post)
-            context['title'] = post.title
-            return render(request, "edit_post.html", context)
-        else:
-            return HttpResponse(status=403) # TODO(Tom): Make this render a custom reponse
-        pass
+        context['form'] = PostForm(instance=post)
+        context['title'] = post.title
+        return render(request, "edit_post.html", context)
     elif request.method == 'POST':
         form = PostForm(request.POST, request.FILES, instance=post)
         if form.is_valid():
