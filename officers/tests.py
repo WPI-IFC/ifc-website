@@ -88,6 +88,7 @@ class ViewTesting(TestCase):
         self.assertEqual(response.status_code, 403)
 
         updated_post = Post.objects.get(id=self.post.id)
-        self.assertEqual(updated_post.last_edit, self.post.published)
+        self.assertEqual(updated_post.id, self.post.id)
+        self.assertNotEqual(updated_post.last_edit, self.post.published)
         self.assertNotEqual(updated_post.title, data['title'])
         self.assertNotEqual(updated_post.body, data['body'])
