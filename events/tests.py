@@ -43,8 +43,6 @@ class ViewTests(TestCase):
             secondary_color="#000000"
         )
 
-        print(wrong_house.lower_repr())
-
         data = {
             "title": "Test Event",
             "d_time": now(),
