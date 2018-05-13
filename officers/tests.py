@@ -1,3 +1,5 @@
+from datetime import datetime, timezone
+
 from django.contrib.auth.models import User
 from django.test import TestCase, Client
 from django.utils.timezone import now
@@ -16,8 +18,8 @@ class ViewTesting(TestCase):
         )
         self.post = Post.objects.create(
             blog=self.blog,
-            published=now(),
-            last_edit=now(),
+            published=datetime(2000, 1, 1, tzinfo=timezone.utc),
+            last_edit=datetime(2000, 1, 1, tzinfo=timezone.utc),
             author=self.user,
             author_string=self.user.username,
             title="TEST_POST_TITLE 1",
