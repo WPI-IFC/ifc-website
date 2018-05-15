@@ -25,6 +25,11 @@ SECRET_KEY = 'b%5#^l#o#wdjh=c%)v^3+qudzy#-pi&45*-m39+h1i)h5yd$nx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+if DEBUG:
+    INTERNAL_IPS = (
+        '127.0.0.1',
+    )
+
 ALLOWED_HOSTS = ['hi-friend.dyn.wpi.edu', 'localhost', 'wpiifc.org']
 
 
@@ -84,6 +89,18 @@ if 'TRAVIS' in os.environ:
             'NAME': 'travisci',
             'USER': 'postgres',
             'PASSWORD': '',
+            'HOST': 'localhost',
+            'PORT': ''
+        }
+    }
+elif not DEBUG:
+    print('================RUNNING IN PROD======================')
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'ifc_web',
+            'USER': os.environ['PGSQL_USER'],
+            'PASSWORD': os.environ['PGSQL_PASS'],
             'HOST': 'localhost',
             'PORT': ''
         }
