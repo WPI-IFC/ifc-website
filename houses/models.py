@@ -3,7 +3,7 @@ from django.db import models
 class Fraternity(models.Model):
     english_name = models.CharField(max_length=30)
     nickname = models.CharField(max_length=30, blank=True)
-    letters = models.ImageField(upload_to="letters")
+    letters = models.ImageField(upload_to="letters", blank=True)
     primary_color = models.CharField(max_length=7)
     secondary_color = models.CharField(max_length=7)
     featured_picture = models.ImageField(

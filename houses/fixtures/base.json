@@ -1,0 +1,210 @@
+[
+{
+  "model": "houses.fraternity",
+  "pk": 1,
+  "fields": {
+    "english_name": "Alpha Chi Rho",
+    "nickname": "Crow",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 2,
+  "fields": {
+    "english_name": "Alpha Tau Omega",
+    "nickname": "ATO",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 3,
+  "fields": {
+    "english_name": "Beta Theta Pi",
+    "nickname": "Beta",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 4,
+  "fields": {
+    "english_name": "Lambda Chi Alpha",
+    "nickname": "LCA",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 5,
+  "fields": {
+    "english_name": "Phi Gamma Delta",
+    "nickname": "FIJI",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 6,
+  "fields": {
+    "english_name": "Phi Kappa Theta",
+    "nickname": "Kap",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 7,
+  "fields": {
+    "english_name": "Phi Sigma Kappa",
+    "nickname": "PSK",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 8,
+  "fields": {
+    "english_name": "Sigma Alpha Epsilon",
+    "nickname": "SAE",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 9,
+  "fields": {
+    "english_name": "Sigma Phi Epsilon",
+    "nickname": "Sig Ep",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 10,
+  "fields": {
+    "english_name": "Sigma Pi",
+    "nickname": "",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 11,
+  "fields": {
+    "english_name": "Tau Kappa Epsilon",
+    "nickname": "TEKE",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 12,
+  "fields": {
+    "english_name": "Theta Chi",
+    "nickname": "",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 13,
+  "fields": {
+    "english_name": "Zeta Psi",
+    "nickname": "Zete",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+}
+]
