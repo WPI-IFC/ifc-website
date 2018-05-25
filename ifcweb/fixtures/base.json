@@ -557,6 +557,14 @@
   }
 },
 {
+  "model": "auth.group",
+  "pk": 29,
+  "fields": {
+    "name": "Sigma Phi Epsilon",
+    "permissions": []
+  }
+},
+{
   "model": "auth.user",
   "pk": 1,
   "fields": {
