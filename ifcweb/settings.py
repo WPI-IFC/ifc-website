@@ -30,8 +30,9 @@ if DEBUG:
         '127.0.0.1',
     )
 
-ALLOWED_HOSTS = ['hi-friend.dyn.wpi.edu', 'localhost', 'wpiifc.org']
-
+    ALLOWED_HOSTS = ['hi-friend.dyn.wpi.edu', 'localhost', 'wpiifc.org']
+else:
+    ALLOWED_HOSTS = ['wpiifc.org', 'www.wpiifc.org']
 
 # Application definition
 
