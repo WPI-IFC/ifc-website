@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'houses/base.css' %}">
-    <link rel="stylesheet" href="{% static 'ifcweb/home.css' %}">
     <title>WPI IFC</title>
 </head>
 <body>
     {% include "header.html" %}
-    <div class="content-container">
-        <div class="featured-picture">
-            <img src="{% static 'ifcweb/splash.jpg' %}" alt="Banner Image">
-            <div class="call-to-text">
-                Website Under Development
-                <br><br> Developing The Leaders of Tomorrow
-            </div>
+    <div class="container content-container">
+        <br>
+        <div class="jumbotron" style="background-image: url({% static 'ifcweb/splash.jpg' %}); background-position: center; background-size: cover;">
+            <h2 class="font-weight-bold text-right py-5">
+                <p>WPI Inter-Fraternity Council</p>
+                <p class="lead text-med-gray">Developing The Leaders of Tomorrow</p>
+                <br><br>
+            </h1>
         </div>
         <h1>
             Main page
