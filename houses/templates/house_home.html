@@ -2,25 +2,19 @@
 <html>
     <head>
         {% load static %}
-        <link rel="stylesheet" href="{% static 'houses/base.css' %}">
-        <link rel="stylesheet" href="{% static 'houses/house_home.css' %}">
     </head>
     <body>
         {% include "header.html" %}
-        <div class="content-container">
+        <div class="container content-container">
             <div class="featured-content">
-                <img class="featured-image" src="{% static 'houses/all_houses.png' %}">
-                <p class="featured-text">
-                    <h1 style="text-align:center;">Chapters</h1>
-                </p>
+                <img class="mx-auto pt-5 d-block img-fluid featured-image" src="{% static 'houses/all_houses.png' %}">
+                <h1 class="text-center">Chapters</h1>
             </div>
-            <div class="body-content">
-                <div class="house-list">
-                    <ul>
-                        {% for house, nospace in houses %}
-                            <li><a href="{{ nospace }}">{{ house }}</a></li>
-                        {% endfor %}
-                    </ul>
+            <div class="mx-5 text-center body-content">
+                <div class="row justify-content-center house-list">
+                    {% for house, nospace in houses %}
+                        <div class="col my-1 col-md-4"><a href="{{ nospace }}">{{ house }}</a></div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

@@ -32,3 +32,27 @@ $theme-colors: (
 .text-med-gray {
     color: $gray-600;
 }
+
+.officer-cards {
+    .card:hover {
+        transition-duration: .25s;
+        box-shadow: 0 0 10px $black;
+    }
+}
+
+.title-breakout {
+    border-left: 2px solid $gray-500;
+}
+
+.events {
+    h3 {
+        font-weight: 300;
+        font-size: 20px;
+    }
+}
+
+#motto {
+    font-family: 'PT serif', serfi;
+    font-style: italic;
+    font-size: 25px;
+}

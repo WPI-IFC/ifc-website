@@ -6,22 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Us</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'houses/base.css' %}">
-    <link rel="stylesheet" href="{% static 'ifcweb/about.css' %}">
 </head>
 <body>
     {% include 'header.html' %}
-    <div class="content-container">
+    <div class="container content-container">
         <h1>WPI's Interfraternity Council</h1>
         <h2>Mission</h2>
-        <p class="mission">
+        <p class="px-5">
                 We, the Interfraternity Council, exist to promote the shared interests
                 and values of our member fraternities: leadership, service,
                 brotherhood, and scholarship. We believe in Fraternity and that the
                 shared values of Fraternity drive the IFC to create better communities,
                 better chapters, and better men.
         </p>
-        <p class="mission">
+        <p class="px-5">
                 We work to advance the academic mission of the host institution, to
                 enable fraternal organizations to grow and thrive through
                 collaboration and teamwork, to provide an outlet for self-governance
@@ -32,38 +30,41 @@
         </p>
         <div class="officer-structure">
             <h2>Structure</h2>
-            <img src="{% static 'ifcweb/ifc-orgchart.png' %}" alt="org chart">            
+            <div>
+                <img style="width: 100%" src="{% static 'ifcweb/ifc-orgchart.png' %}" alt="org chart">
+            </div>
             <p>
-                <div class="officer-cards">
+                <div class="row justify-content-center px-5 officer-cards">
                     {% if not errors %}
                         {% for user, headshot, position, slug in officers %}
-                        <div class="card">
+                        <div class="col-lg-2 col-sm-3 m-1 card">
                             <a href="officer/{{ slug }}">
-                            <img src="{{ headshot.url }}" alt="headshot">
+                            <img class="card-img-top" src="{{ headshot.url }}" alt="headshot">
                             </a>
-                            <span class="officer-name">
-                                {{ user.first_name }} {{ user.last_name }}<br>
-                            </span>
-                            <span class="officer-position">
-                                {{ position }}
-                            </span>
+                            <div class="card-body">
+                                <span class="officer-name">
+                                    {{ user.first_name }} {{ user.last_name }}<br>
+                                </span>
+                                <span class="card-title officer-position">
+                                    {{ position }}
+                                </span>
+                            </div>
                         </div>
                         {% endfor %}
                     {% else %}
-                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>President</span></div>
-                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident0</span></div>
-                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident1</span></div>
-                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident2</span></div>
-                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident3</span></div>
-                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident4</span></div>
-                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident5</span></div>
-                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident6</span></div>
-                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident7</span></div>
-                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident8</span></div>
-                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident9</span></div>
-                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident10</span></div>
-                    <div class="card"><img src="http://via.placeholder.com/100x100" alt="headshot"><span>VPresident11</span></div>
-                    ERRORS
+                    <div class="col-lg-2 col-sm-3 m-1 card"><img class="card-image-top"src="http://via.placeholder.com/100x100" alt="headshot"><span class="card-text">President</span></div>
+                    <div class="col-lg-2 col-sm-3 m-1 card"><img class="card-image-top"src="http://via.placeholder.com/100x100" alt="headshot"><span class="card-text">VPresident0</span></div>
+                    <div class="col-lg-2 col-sm-3 m-1 card"><img class="card-image-top"src="http://via.placeholder.com/100x100" alt="headshot"><span class="card-text">VPresident1</span></div>
+                    <div class="col-lg-2 col-sm-3 m-1 card"><img class="card-image-top"src="http://via.placeholder.com/100x100" alt="headshot"><span class="card-text">VPresident2</span></div>
+                    <div class="col-lg-2 col-sm-3 m-1 card"><img class="card-image-top"src="http://via.placeholder.com/100x100" alt="headshot"><span class="card-text">VPresident3</span></div>
+                    <div class="col-lg-2 col-sm-3 m-1 card"><img class="card-image-top"src="http://via.placeholder.com/100x100" alt="headshot"><span class="card-text">VPresident4</span></div>
+                    <div class="col-lg-2 col-sm-3 m-1 card"><img class="card-image-top"src="http://via.placeholder.com/100x100" alt="headshot"><span class="card-text">VPresident5</span></div>
+                    <div class="col-lg-2 col-sm-3 m-1 card"><img class="card-image-top"src="http://via.placeholder.com/100x100" alt="headshot"><span class="card-text">VPresident6</span></div>
+                    <div class="col-lg-2 col-sm-3 m-1 card"><img class="card-image-top"src="http://via.placeholder.com/100x100" alt="headshot"><span class="card-text">VPresident7</span></div>
+                    <div class="col-lg-2 col-sm-3 m-1 card"><img class="card-image-top"src="http://via.placeholder.com/100x100" alt="headshot"><span class="card-text">VPresident8</span></div>
+                    <div class="col-lg-2 col-sm-3 m-1 card"><img class="card-image-top"src="http://via.placeholder.com/100x100" alt="headshot"><span class="card-text">VPresident9</span></div>
+                    <div class="col-lg-2 col-sm-3 m-1 card"><img class="card-image-top"src="http://via.placeholder.com/100x100" alt="headshot"><span class="card-text">VPresident10</span></div>
+                    <div class="col-lg-2 col-sm-3 m-1 card"><img class="card-image-top"src="http://via.placeholder.com/100x100" alt="headshot"><span class="card-text">VPresident11</span></div>
                     {% endif %}
                 </div>
             </p>
