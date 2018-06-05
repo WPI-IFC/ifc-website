@@ -1,0 +1,3423 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "houses",
+    "model": "fraternity"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "officers",
+    "model": "biography"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "officers",
+    "model": "blog"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "officers",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "events",
+    "model": "houseevent"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "events",
+    "model": "officerevent"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "static_precompiler",
+    "model": "dependency"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2xlpsmmndfs04dm057o9vpcdosk11cgz",
+  "fields": {
+    "session_data": "YjJlNWU0MmQwNmZmZDgyYzk0MzgzMDVhYjM0M2I0MWJmN2NiODRhZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI5MjU2MDE5M2ZjZmVhNDU5ZDJjZGVmYTVhMGNlOGIwNTBjNzhkZGZkIn0=",
+    "expire_date": "2018-06-19T01:54:42.079Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "iv1msj7pmdiv8k036q48wtm8oc2r520l",
+  "fields": {
+    "session_data": "YjJlNWU0MmQwNmZmZDgyYzk0MzgzMDVhYjM0M2I0MWJmN2NiODRhZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI5MjU2MDE5M2ZjZmVhNDU5ZDJjZGVmYTVhMGNlOGIwNTBjNzhkZGZkIn0=",
+    "expire_date": "2018-06-08T02:36:29.711Z"
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 1,
+  "fields": {
+    "english_name": "Alpha Chi Rho",
+    "nickname": "Crow",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 2,
+  "fields": {
+    "english_name": "Alpha Tau Omega",
+    "nickname": "ATO",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 3,
+  "fields": {
+    "english_name": "Beta Theta Pi",
+    "nickname": "Beta",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 4,
+  "fields": {
+    "english_name": "Lambda Chi Alpha",
+    "nickname": "LCA",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 5,
+  "fields": {
+    "english_name": "Phi Gamma Delta",
+    "nickname": "FIJI",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 6,
+  "fields": {
+    "english_name": "Phi Kappa Theta",
+    "nickname": "Kap",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 7,
+  "fields": {
+    "english_name": "Phi Sigma Kappa",
+    "nickname": "PSK",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 8,
+  "fields": {
+    "english_name": "Sigma Alpha Epsilon",
+    "nickname": "SAE",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 9,
+  "fields": {
+    "english_name": "Sigma Phi Epsilon",
+    "nickname": "Sig Ep",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 10,
+  "fields": {
+    "english_name": "Sigma Pi",
+    "nickname": "",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 11,
+  "fields": {
+    "english_name": "Tau Kappa Epsilon",
+    "nickname": "TEKE",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 12,
+  "fields": {
+    "english_name": "Theta Chi",
+    "nickname": "",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "houses.fraternity",
+  "pk": 13,
+  "fields": {
+    "english_name": "Zeta Psi",
+    "nickname": "Zete",
+    "letters": "",
+    "primary_color": "#002B54",
+    "secondary_color": "#001f3c",
+    "featured_picture": "",
+    "motto": "",
+    "values": "",
+    "extra_info": "",
+    "house_pic": ""
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can add fraternity",
+    "content_type": 7,
+    "codename": "add_fraternity"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can change fraternity",
+    "content_type": 7,
+    "codename": "change_fraternity"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can delete fraternity",
+    "content_type": 7,
+    "codename": "delete_fraternity"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can add biography",
+    "content_type": 8,
+    "codename": "add_biography"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can change biography",
+    "content_type": 8,
+    "codename": "change_biography"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can delete biography",
+    "content_type": 8,
+    "codename": "delete_biography"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add blog",
+    "content_type": 9,
+    "codename": "add_blog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change blog",
+    "content_type": 9,
+    "codename": "change_blog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete blog",
+    "content_type": 9,
+    "codename": "delete_blog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 10,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 10,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 10,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can add house event",
+    "content_type": 11,
+    "codename": "add_houseevent"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can change house event",
+    "content_type": 11,
+    "codename": "change_houseevent"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can delete house event",
+    "content_type": 11,
+    "codename": "delete_houseevent"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can add officer event",
+    "content_type": 12,
+    "codename": "add_officerevent"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can change officer event",
+    "content_type": 12,
+    "codename": "change_officerevent"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can delete officer event",
+    "content_type": 12,
+    "codename": "delete_officerevent"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add dependency",
+    "content_type": 13,
+    "codename": "add_dependency"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change dependency",
+    "content_type": 13,
+    "codename": "change_dependency"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete dependency",
+    "content_type": 13,
+    "codename": "delete_dependency"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "IFC Exec",
+    "permissions": [
+      34,
+      35
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "IFC Chair",
+    "permissions": [
+      34,
+      35
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 3,
+  "fields": {
+    "name": "Chapter Rep",
+    "permissions": [
+      31,
+      32
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 4,
+  "fields": {
+    "name": "Alpha Chi Rho",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 5,
+  "fields": {
+    "name": "Alpha Tau Omega",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 6,
+  "fields": {
+    "name": "Beta Theta Pi",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 7,
+  "fields": {
+    "name": "Lambda Chi Alpha",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 8,
+  "fields": {
+    "name": "Phi Gamma Delta",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 9,
+  "fields": {
+    "name": "Phi Kappa Theta",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 10,
+  "fields": {
+    "name": "Phi Sigma Kappa",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 11,
+  "fields": {
+    "name": "Sigma Alpha Epsilon",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 12,
+  "fields": {
+    "name": "Sigma Pi",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 13,
+  "fields": {
+    "name": "Tau Kappa Epsilon",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 14,
+  "fields": {
+    "name": "Theta Chi",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 15,
+  "fields": {
+    "name": "Zeta Psi",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 16,
+  "fields": {
+    "name": "President",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 17,
+  "fields": {
+    "name": "VP Standards and Internal Operations",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 18,
+  "fields": {
+    "name": "VP Recruitment",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 19,
+  "fields": {
+    "name": "VP Communications",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 20,
+  "fields": {
+    "name": "VP Finance and Service",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 21,
+  "fields": {
+    "name": "Risk Manager",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 22,
+  "fields": {
+    "name": "Community Involvement",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 23,
+  "fields": {
+    "name": "Activities",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 24,
+  "fields": {
+    "name": "Membership Development",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 25,
+  "fields": {
+    "name": "Public Relations",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 26,
+  "fields": {
+    "name": "Web",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 27,
+  "fields": {
+    "name": "Academics",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 28,
+  "fields": {
+    "name": "Community Service",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 29,
+  "fields": {
+    "name": "Sigma Phi Epsilon",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$toY3xBLi9BC9$PnnbdRLwkpbNhoJNbNyYczXx/UTvrVW7bjNXwmqAX2E=",
+    "last_login": "2018-06-05T01:54:42.066Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@website.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2018-05-25T02:34:14.909Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$jIci9YA8KmCl$PECR+94MdC12IXOY58TKOXIJfbnfRl8PO4oKs8nAKhs=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "pres",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:24:22Z",
+    "groups": [
+      1,
+      16
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$f31rQCSXbjr7$AleReYWie8Ogmjine1C1kLmzSRPv738uLzqvseP9Stw=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "vp_standards",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:25:07Z",
+    "groups": [
+      1,
+      17
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$LvJo6oEurDvl$jugyPjZo3SWnlj3u4G5SaKn0+4gXMn64dbwtHMqC+Ys=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "vp_recruitment",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:25:17Z",
+    "groups": [
+      1,
+      18
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$2RBuhDSH4ZG3$CV1TQwpEJUfVRPNrWKUE4MnzoyxVOmnmKLzdOBx8IIg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "vp_communications",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:29:19Z",
+    "groups": [
+      1,
+      19
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$N24mVuoovAHK$QYmhbr3DAiPIVvObqbrdjgAzchkUkPZaWQH+2Bd1JiI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "vp_finance",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:30:54Z",
+    "groups": [
+      1,
+      20
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$WYa2BVyS0Vvi$J9DFmYYKaTHSUa1GMkeqm426IwiwejZOkBi1Hc76hzM=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "risk_manager",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:31:16Z",
+    "groups": [
+      1,
+      21
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$xu6WnpI8TuFE$9d70AsFKlr9p2lVHxHlyrVtmP7BpfLkph1PnVnCD9lY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "activities",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:31:38Z",
+    "groups": [
+      2,
+      23
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$DZpBbaSwep7c$gcd8hgmzFMrzUh/aBRXi+Qqs6Rmk4ZwbV6BVzis0YYQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "memdev",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:31:50Z",
+    "groups": [
+      2,
+      24
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$GlcNBr2QL16I$P+81kVdOSpG8+2nPe9j3NJM/um9mF1cYLmrlwp9mxfc=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "pr",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:32:00Z",
+    "groups": [
+      2,
+      25
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 11,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$z9cr6tyVFYlR$VzwUssCmBOsa7mWIztWw1Ttzpg3v8mRsdewBRhk9TWo=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "web",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:32:07Z",
+    "groups": [
+      2,
+      26
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 12,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$TIl6QThFWiUN$U5QrvuwPD7J7CkX7Wt53M4rUctl/Ea7PoTOVjuP+YmY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "academics",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:32:23Z",
+    "groups": [
+      2,
+      27
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 13,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$EGwJ9tcPXWbU$J01jM2JOncTPBWVOxYl0DfQvvseitEXq649XMLzF4BA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "community_service",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:32:54Z",
+    "groups": [
+      2,
+      28
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 14,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$dkp5TP5KavSU$RWVtO0snVTVkH3Z1PIjAqZ0QtQEEsxA/PG31sdkn4mg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "community_involvement",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:33:08Z",
+    "groups": [
+      2,
+      22
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 15,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$GwshlGT5Y49I$3NT516SvGkoL4+4xDUSPDW3o8+Kdn8taL1B8jwq3+RU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "zp-rep",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:37:00Z",
+    "groups": [
+      3,
+      15
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 16,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$3PUTOGfbNfCB$XI8KSpVuRPmXm+NPrJFuaiuA2AJIzcY0BecPd4b+Rtk=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "acr-rep",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:37:13Z",
+    "groups": [
+      3,
+      4
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 17,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$dGamtUh5kiud$rjhjMNczX54sbvKOJKqCDP2zOUSDuG5Mtz6rK+v9Xxc=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "ato-rep",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:37:23Z",
+    "groups": [
+      3,
+      5
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 18,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$yzEOSTRTeU1f$/0ctP8bL73VEdRhlCIj89o8TWFOS6dQIPLXPBfGDv4I=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "btp-rep",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:37:38Z",
+    "groups": [
+      3,
+      6
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 19,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$ByNjEQ6WdWZl$MYMYCLHNLeFh7wecUJx3B9uEsldbUNQseF4UCwE2N3g=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "lca-rep",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:37:59Z",
+    "groups": [
+      3,
+      7
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 20,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$dOhNpetVXZlC$G7K/NMxhLwVIDva+FpcWzd0rLvLFAC7Pm376DBhBUJo=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "pgd-rep",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:38:22Z",
+    "groups": [
+      3,
+      8
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 21,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$Y8S8134ZDx5J$Y4WGA7m9XaJ3xC6i7up3dGDkfU+jXo1L5wD8WktbALo=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "pkt-rep",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:38:38Z",
+    "groups": [
+      3,
+      9
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 22,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$iE6ss0X43XVd$UUVCyfy96vtvp9QOYBzYXUARXyFNjxPdoKiv7j6vq3o=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "psk-rep",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:38:56Z",
+    "groups": [
+      3,
+      10
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 23,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$0XX94NLkPcL9$HqPkIwgDlaMwHItt8YIoGUPTXs+UMOCF+BexKgmHbnU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "sae-rep",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:39:16Z",
+    "groups": [
+      3,
+      11
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 24,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$ZGsHtVU1XGp2$FXFcnTXpaLjGuj+tEtgoANnbIaLanjIuHnvhFIm3iKA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "spe-rep",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:39:36Z",
+    "groups": [
+      3,
+      29
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 25,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$e0sXB2RiWLGm$OuFN3iIWReODe/DV5RQSm+lnVRxBafBu14S3zlmwLwU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "sp-rep",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:39:56Z",
+    "groups": [
+      3,
+      12
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 26,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$MqRLsGqScKsC$G7UvomFjXxiI8Y84AweJgVCEns2n1WLU62Q6iRvwcMI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "tke-rep",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:40:08Z",
+    "groups": [
+      3,
+      13
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 27,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$7DZyyLoAtUil$6HV5FaBk1bxRvRS/C9LEe15k5LPvOOk2/ZaqJtb0Fx0=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "tc-rep",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-05-25T03:40:23Z",
+    "groups": [
+      3,
+      14
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "officers.biography",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "content": "The IFC President",
+    "headshot": "user-placeholder.png"
+  }
+},
+{
+  "model": "officers.biography",
+  "pk": 2,
+  "fields": {
+    "user": 3,
+    "content": "The VP Standards and Internal Operations",
+    "headshot": "user-placeholder.png"
+  }
+},
+{
+  "model": "officers.biography",
+  "pk": 3,
+  "fields": {
+    "user": 4,
+    "content": "The VP Recuitment",
+    "headshot": "user-placeholder.png"
+  }
+},
+{
+  "model": "officers.biography",
+  "pk": 4,
+  "fields": {
+    "user": 5,
+    "content": "The VP Communications",
+    "headshot": "user-placeholder.png"
+  }
+},
+{
+  "model": "officers.biography",
+  "pk": 5,
+  "fields": {
+    "user": 6,
+    "content": "The VP Finance and Service",
+    "headshot": "user-placeholder.png"
+  }
+},
+{
+  "model": "officers.biography",
+  "pk": 6,
+  "fields": {
+    "user": 7,
+    "content": "The IFC Risk Manager",
+    "headshot": "user-placeholder.png"
+  }
+},
+{
+  "model": "officers.biography",
+  "pk": 7,
+  "fields": {
+    "user": 12,
+    "content": "The Academics Chair",
+    "headshot": "user-placeholder.png"
+  }
+},
+{
+  "model": "officers.biography",
+  "pk": 8,
+  "fields": {
+    "user": 8,
+    "content": "The Activities Chair",
+    "headshot": "user-placeholder.png"
+  }
+},
+{
+  "model": "officers.biography",
+  "pk": 9,
+  "fields": {
+    "user": 14,
+    "content": "The Community Involvement Chair",
+    "headshot": "user-placeholder.png"
+  }
+},
+{
+  "model": "officers.biography",
+  "pk": 10,
+  "fields": {
+    "user": 13,
+    "content": "The Community Service chair",
+    "headshot": "user-placeholder.png"
+  }
+},
+{
+  "model": "officers.biography",
+  "pk": 11,
+  "fields": {
+    "user": 9,
+    "content": "The Membership Development chair",
+    "headshot": "user-placeholder.png"
+  }
+},
+{
+  "model": "officers.biography",
+  "pk": 12,
+  "fields": {
+    "user": 10,
+    "content": "The Public Relation chair",
+    "headshot": "user-placeholder.png"
+  }
+},
+{
+  "model": "officers.biography",
+  "pk": 13,
+  "fields": {
+    "user": 11,
+    "content": "The Web chair",
+    "headshot": "user-placeholder.png"
+  }
+},
+{
+  "model": "officers.blog",
+  "pk": 2,
+  "fields": {
+    "current_owner": 12,
+    "position_title": "Academics Chair",
+    "slug": "academics-chair"
+  }
+},
+{
+  "model": "officers.blog",
+  "pk": 3,
+  "fields": {
+    "current_owner": 8,
+    "position_title": "Activities Chair",
+    "slug": "activities-chair"
+  }
+},
+{
+  "model": "officers.blog",
+  "pk": 4,
+  "fields": {
+    "current_owner": 14,
+    "position_title": "Community Involvement Chair",
+    "slug": "community-involvement-chair"
+  }
+},
+{
+  "model": "officers.blog",
+  "pk": 5,
+  "fields": {
+    "current_owner": 13,
+    "position_title": "Community Service Chair",
+    "slug": "community-service-chair"
+  }
+},
+{
+  "model": "officers.blog",
+  "pk": 6,
+  "fields": {
+    "current_owner": 9,
+    "position_title": "Membership Development Chair",
+    "slug": "membership-development-chair"
+  }
+},
+{
+  "model": "officers.blog",
+  "pk": 7,
+  "fields": {
+    "current_owner": 10,
+    "position_title": "Public Relations Chair",
+    "slug": "public-relations-chair"
+  }
+},
+{
+  "model": "officers.blog",
+  "pk": 8,
+  "fields": {
+    "current_owner": 2,
+    "position_title": "President",
+    "slug": "president"
+  }
+},
+{
+  "model": "officers.blog",
+  "pk": 9,
+  "fields": {
+    "current_owner": 7,
+    "position_title": "Risk Manager",
+    "slug": "risk-manager"
+  }
+},
+{
+  "model": "officers.blog",
+  "pk": 10,
+  "fields": {
+    "current_owner": 5,
+    "position_title": "VP Communications",
+    "slug": "vp-communications"
+  }
+},
+{
+  "model": "officers.blog",
+  "pk": 11,
+  "fields": {
+    "current_owner": 6,
+    "position_title": "VP Finance and Service",
+    "slug": "vp-finance-and-service"
+  }
+},
+{
+  "model": "officers.blog",
+  "pk": 12,
+  "fields": {
+    "current_owner": 4,
+    "position_title": "VP Recruitment",
+    "slug": "vp-recruitment"
+  }
+},
+{
+  "model": "officers.blog",
+  "pk": 13,
+  "fields": {
+    "current_owner": 3,
+    "position_title": "VP Standards and Internal Operations",
+    "slug": "vp-standards-and-internal-operations"
+  }
+},
+{
+  "model": "officers.blog",
+  "pk": 14,
+  "fields": {
+    "current_owner": 11,
+    "position_title": "Web Chair",
+    "slug": "web-chair"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2018-05-25T02:46:21.210Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "IFC Exec",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2018-05-25T02:49:52.462Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "IFC Chair",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2018-05-25T02:50:05.308Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "IFC Exec",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2018-05-25T02:53:12.496Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "3",
+    "object_repr": "Chapter Rep",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2018-05-25T02:53:36.014Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "4",
+    "object_repr": "Alpha Chi Rho",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2018-05-25T02:53:42.242Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "5",
+    "object_repr": "Alpha Tau Omega",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2018-05-25T02:54:48.509Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "6",
+    "object_repr": "Beta Theta Pi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2018-05-25T02:54:59.656Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "7",
+    "object_repr": "Lambda Chi Alpha",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2018-05-25T02:55:05.287Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "8",
+    "object_repr": "Phi Gamma Delta",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2018-05-25T02:55:29.167Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "9",
+    "object_repr": "Phi Kappa Theta",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2018-05-25T02:55:36.466Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "10",
+    "object_repr": "Phi Sigma Kappa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2018-05-25T02:55:50.913Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "11",
+    "object_repr": "Sigma Alpha Epsilon",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2018-05-25T02:55:56.771Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "12",
+    "object_repr": "Sigma Pi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2018-05-25T02:56:10.127Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "13",
+    "object_repr": "Tau Kappa Epsilon",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2018-05-25T02:56:15.312Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "14",
+    "object_repr": "Theta Chi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2018-05-25T02:56:28.718Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "15",
+    "object_repr": "Zeta Psi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2018-05-25T02:57:47.384Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "16",
+    "object_repr": "President",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2018-05-25T02:58:02.847Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "17",
+    "object_repr": "VP Standards and Internal Operations",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2018-05-25T02:58:09.470Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "18",
+    "object_repr": "VP Recruitment",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2018-05-25T02:58:19.466Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "19",
+    "object_repr": "VP Communications",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2018-05-25T02:58:32.451Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "20",
+    "object_repr": "VP Finance and Service",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2018-05-25T02:58:37.728Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "21",
+    "object_repr": "Risk Manager",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2018-05-25T02:58:46.404Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "22",
+    "object_repr": "Community Involvement",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2018-05-25T02:58:52.799Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "23",
+    "object_repr": "Activities",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2018-05-25T02:59:00.142Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "24",
+    "object_repr": "Membership Development",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2018-05-25T02:59:05.994Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "25",
+    "object_repr": "Public Relations",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2018-05-25T02:59:10.319Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "26",
+    "object_repr": "Web",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2018-05-25T02:59:15.136Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "27",
+    "object_repr": "Academics",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2018-05-25T02:59:21.159Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "28",
+    "object_repr": "Community Service",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2018-05-25T03:01:51.817Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "President",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2018-05-25T03:03:57.367Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "President",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2018-05-25T03:10:38.604Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Alpha Chi Rho",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2018-05-25T03:11:37.415Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Alpha Tau Omega",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2018-05-25T03:11:49.343Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Beta Theta Pi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2018-05-25T03:12:08.499Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Lambda Chi Alpha",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2018-05-25T03:12:21.627Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Beta Theta Pi",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"nickname\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2018-05-25T03:12:26.812Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Alpha Tau Omega",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"nickname\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2018-05-25T03:12:41.418Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Phi Gamma Delta",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2018-05-25T03:12:53.616Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Phi Kappa Theta",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2018-05-25T03:13:19.665Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Phi Sigma Kappa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2018-05-25T03:13:38.394Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Sigma Alpha Epsilon",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2018-05-25T03:14:00.094Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Sigma Phi Epsilon",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2018-05-25T03:14:11.431Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Sigma Pi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2018-05-25T03:14:30.024Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Tau Kappa Epsilon",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2018-05-25T03:14:44.412Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "Theta Chi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2018-05-25T03:15:00.514Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "13",
+    "object_repr": "Zeta Psi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2018-05-25T03:24:22.661Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "pres",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2018-05-25T03:25:08.019Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "vp_standards",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2018-05-25T03:25:17.419Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "vp_recruitment",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2018-05-25T03:29:19.127Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "5",
+    "object_repr": "vp_communications",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2018-05-25T03:30:54.081Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "6",
+    "object_repr": "vp_finance",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2018-05-25T03:31:16.178Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "7",
+    "object_repr": "risk_manager",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2018-05-25T03:31:38.197Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "8",
+    "object_repr": "activities",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2018-05-25T03:31:50.492Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "9",
+    "object_repr": "memdev",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2018-05-25T03:32:00.334Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "10",
+    "object_repr": "pr",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2018-05-25T03:32:07.894Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "11",
+    "object_repr": "web",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2018-05-25T03:32:23.749Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "12",
+    "object_repr": "academics",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2018-05-25T03:32:54.348Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "13",
+    "object_repr": "community_service",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2018-05-25T03:33:08.790Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "14",
+    "object_repr": "community_involvement",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2018-05-25T03:33:33.349Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "14",
+    "object_repr": "community_involvement",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2018-05-25T03:33:49.791Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "12",
+    "object_repr": "academics",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2018-05-25T03:34:08.953Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "8",
+    "object_repr": "activities",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2018-05-25T03:34:14.428Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "14",
+    "object_repr": "community_involvement",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2018-05-25T03:34:28.085Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "13",
+    "object_repr": "community_service",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2018-05-25T03:34:37.937Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "9",
+    "object_repr": "memdev",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2018-05-25T03:34:55.093Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "10",
+    "object_repr": "pr",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2018-05-25T03:35:06.835Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "pres",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2018-05-25T03:35:19.904Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "7",
+    "object_repr": "risk_manager",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2018-05-25T03:35:34.537Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "5",
+    "object_repr": "vp_communications",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2018-05-25T03:35:47.568Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "6",
+    "object_repr": "vp_finance",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2018-05-25T03:36:17.423Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "vp_recruitment",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2018-05-25T03:36:30.165Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "vp_standards",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2018-05-25T03:36:39.314Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "11",
+    "object_repr": "web",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2018-05-25T03:37:00.879Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "15",
+    "object_repr": "zp-rep",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2018-05-25T03:37:13.633Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "16",
+    "object_repr": "acr-rep",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2018-05-25T03:37:23.096Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "17",
+    "object_repr": "ato-rep",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2018-05-25T03:37:39.038Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "18",
+    "object_repr": "btp-rep",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2018-05-25T03:37:59.331Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "19",
+    "object_repr": "lca-rep",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2018-05-25T03:38:22.086Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "20",
+    "object_repr": "pgd-rep",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2018-05-25T03:38:38.420Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "21",
+    "object_repr": "pkt-rep",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2018-05-25T03:38:56.718Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "22",
+    "object_repr": "psk-rep",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2018-05-25T03:39:16.668Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "23",
+    "object_repr": "sae-rep",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2018-05-25T03:39:36.560Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "24",
+    "object_repr": "spe-rep",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2018-05-25T03:39:56.873Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "25",
+    "object_repr": "sp-rep",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2018-05-25T03:40:08.560Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "26",
+    "object_repr": "tke-rep",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2018-05-25T03:40:23.278Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "27",
+    "object_repr": "tc-rep",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2018-05-25T03:40:38.117Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "27",
+    "object_repr": "tc-rep",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2018-05-25T03:40:49.589Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "16",
+    "object_repr": "acr-rep",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2018-05-25T03:41:01.737Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "17",
+    "object_repr": "ato-rep",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2018-05-25T03:41:09.256Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "18",
+    "object_repr": "btp-rep",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2018-05-25T03:41:21.909Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "19",
+    "object_repr": "lca-rep",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2018-05-25T03:41:33.642Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "20",
+    "object_repr": "pgd-rep",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2018-05-25T03:41:44.160Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "21",
+    "object_repr": "pkt-rep",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2018-05-25T03:41:52.907Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "22",
+    "object_repr": "psk-rep",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2018-05-25T03:42:03.300Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "23",
+    "object_repr": "sae-rep",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2018-05-25T03:42:18.291Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "25",
+    "object_repr": "sp-rep",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2018-05-25T03:42:33.866Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "23",
+    "object_repr": "sae-rep",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2018-05-25T03:44:32.849Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "24",
+    "object_repr": "spe-rep",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2018-05-25T03:44:55.921Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "26",
+    "object_repr": "tke-rep",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2018-05-25T03:45:04.477Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "15",
+    "object_repr": "zp-rep",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2018-05-25T03:45:18.180Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "29",
+    "object_repr": "Sigma Phi Epsilon",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2018-05-25T03:45:32.283Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "24",
+    "object_repr": "spe-rep",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2018-05-25T03:46:13.713Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Academics Chair",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2018-05-25T03:46:18.195Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Academics Chair",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2018-05-25T03:46:33.792Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Academics Chair",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2018-05-25T03:46:57.865Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Activities Chair",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"position_title\", \"slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2018-05-25T03:47:12.975Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Community Involvement Chair",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2018-05-25T03:47:27.400Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Community Service Chair",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2018-05-25T03:47:39.566Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "Membership Development Chair",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2018-05-25T03:47:56.616Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "Public Relations Chair",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2018-05-25T03:48:06.649Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "President",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2018-05-25T03:48:23.778Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "Risk Manager",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2018-05-25T03:48:47.418Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "VP Communications",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2018-05-25T03:49:13.060Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "11",
+    "object_repr": "VP Finance and Service",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2018-05-25T03:49:30.010Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "12",
+    "object_repr": "VP Recruitment",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 116,
+  "fields": {
+    "action_time": "2018-05-25T03:49:41.490Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "13",
+    "object_repr": "VP Standards and Internal Operations",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 117,
+  "fields": {
+    "action_time": "2018-05-25T03:49:55.632Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "14",
+    "object_repr": "Web Chair",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 118,
+  "fields": {
+    "action_time": "2018-06-05T02:05:04.543Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "pres",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 119,
+  "fields": {
+    "action_time": "2018-06-05T02:05:40.381Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "vp_standards",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 120,
+  "fields": {
+    "action_time": "2018-06-05T02:06:00.214Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "vp_recruitment",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 121,
+  "fields": {
+    "action_time": "2018-06-05T02:06:19.119Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "vp_communications",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 122,
+  "fields": {
+    "action_time": "2018-06-05T02:06:42.950Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "vp_finance",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 123,
+  "fields": {
+    "action_time": "2018-06-05T02:07:04.700Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "risk_manager",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 124,
+  "fields": {
+    "action_time": "2018-06-05T02:08:09.734Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "academics",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 125,
+  "fields": {
+    "action_time": "2018-06-05T02:08:43.075Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "activities",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 126,
+  "fields": {
+    "action_time": "2018-06-05T02:09:02.297Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "community_involvement",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 127,
+  "fields": {
+    "action_time": "2018-06-05T02:09:17.477Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "community_service",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 128,
+  "fields": {
+    "action_time": "2018-06-05T02:09:38.518Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "memdev",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 129,
+  "fields": {
+    "action_time": "2018-06-05T02:09:54.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "pr",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 130,
+  "fields": {
+    "action_time": "2018-06-05T02:10:32.161Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "web",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 131,
+  "fields": {
+    "action_time": "2018-06-05T02:13:42.899Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "11",
+    "object_repr": "web",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+}
+]

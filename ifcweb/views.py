@@ -12,7 +12,7 @@ def index(request):
 def about(request):
     context = {'officers': [], 'errors': False}
     groups = [
-        'IFC President',
+        'President',
         'VP Standards and Internal Operations',
         'VP Recruitment',
         'VP Communications',
@@ -32,7 +32,6 @@ def about(request):
             blog = Blog.objects.get(current_owner=user)
             context['officers'].append((user, Biography.objects.filter(user=user)[0].headshot, group, blog.slug))
         except IndexError:
-            print(group)
             context['errors'] = True
     return render(request, "about.html", context)
 
