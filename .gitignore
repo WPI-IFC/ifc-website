@@ -2,6 +2,7 @@
 .vscode/
 db.*
 __pycache__
+media/
 /static
 .idea/
 
