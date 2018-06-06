@@ -3,4 +3,5 @@ Pillow
 psycopg2
 django-bootstrap4
 django-sass-processor
+django-compressor
 libsass

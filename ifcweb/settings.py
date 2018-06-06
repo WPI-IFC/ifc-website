@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrap4',
     'sass_processor',
+    'compressor',
     'ifcweb',
     'houses',
     'officers',
