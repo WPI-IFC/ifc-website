@@ -1,3 +1,4 @@
+{% load bootstrap4 %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,64 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ title }}</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'houses/base.css' %}">
-    <link rel="stylesheet" href="{% static 'officers/base.css' %}">
-    <link rel="stylesheet" href="{% static 'officers/article.css' %}">
-    <link rel="stylesheet" href="{% static 'events/edit_event.css' %}">
 </head>
 <body>
     {% include 'header.html' %}
-    <div class="content-container">
+    <div class="container content-container">
+        <br>
         <form method="POST" enctype="multipart/form-data">
             {%csrf_token%}
-            {% for error in form.non_field_errors %}
-            <div class="form-error">
-                {{error}}
-            </div>
-            {% endfor %}
-            {% for field in form %}
-
-            <div class="field-error">
-                {{field.errors}}
-            </div>
-
-            <div class="event-{{ field.label|slugify }}">
-                {{ field.label_tag }}
-                {{ field }}
-            </div>
-            {% endfor %}
-			<br>
+            {% bootstrap_form form %}
             <button action="submit">Save</button>
         </form>
+        <br>
     </div>
     {% include 'footer.html' %}
-    {% if house %}
-    <style>
-        .nav-bar {
-            background: {{ house.primary_color }} !important;
-        }
-
-        .nav-bar li:hover{
-            background: {{ house.secondary_color }} !important;
-        }
-        
-        .nav-bar .drop-down-content {
-            background: {{ house.primary_color }} !important;
-            color: #ffffff;
-        }
-
-        .nav-bar .drop-down-content:hover {
-            background: {{ house.secondary_color }} !important;
-        }
-
-        .nav-bar li:hover{
-            color: #333333;
-        }
-
-        .nav-bar .drop-down-content:hover {
-            color: #333333;
-        }
-    </style>
-    {% endif %}
 </body>
 </html>

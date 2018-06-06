@@ -21,22 +21,21 @@
         <h1>
             Main page
         </h1>
-        <div class="dynamic-content">
+        <div class="mx-4 dynamic-content">
             <br>
-            <h2>Recent Posts</h2>
-                <ul class="posts">
-                    {% if posts|length > 0 %}
-                    {% for post in posts %}
-                        <li class="post">
-                            <h1><a href="about/officer/{{ post.blog.slug }}/{{ post.id }}">{{ post.title }}</a></h1>
-                            <h2>{{ post.published|date:"M, D d, Y" }} - {{ post.author.first_name }} {{ post.author.last_name }} to {{ post.blog.position_title }}</h2>
-                            <p class="post-preivew">{{ post.body|truncatewords:50 }}</p>
-                        </li>
-                    {% endfor %}
-                    {% else %}
-                    <h3>There are no posts</h3>
-                    {% endif %}
-                </ul>
+            <h3>Recent Posts</h3>
+                {% if posts|length > 0 %}
+                {% for post in posts %}
+                    <div class="container post">
+                        <h3 class="row"><a href="about/officer/{{ post.blog.slug }}/{{ post.id }}">{{ post.title }}</a></h1>
+                        <h5 class="row text-med-gray">{{ post.published|date:"M, D d, Y" }} - {{ post.author.first_name }} {{ post.author.last_name }} to {{ post.blog.position_title }}</h2>
+                        <p class="row post-preivew">{{ post.body|truncatewords:50 }}</p>
+                    </div>
+                {% endfor %}
+                {% else %}
+                <h3 class="text-center font-weight-bold empty-dyn-content">There are no posts</h3>
+                {% endif %}
+                <br>
             </div>
     </div>
     {% include "footer.html" %}

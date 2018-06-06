@@ -23,7 +23,7 @@
 						{% for event in ifc_events %}
 						<div class="row">
 							<div class="col event">
-								<h2><a href="officers/{{ event.id }}">{{ event.title }}</a></h2>
+								<h2><a class="text-med-gray" href="officers/{{ event.id }}">{{ event.title }}</a></h2>
 								<h3>{{ event.d_time|date:"M, D d, Y - h:i" }}
 									<br>
 									Added By {{ event.owner.first_name }} {{ event.owner.last_name }}</h3>
@@ -45,7 +45,7 @@
 						{% for event in chapter_events %}
 							<div class="row">
 								<div class="col event">
-									<h2><a href="chapter/{{ event.id }}">{{ event.title }}</a></h2>
+									<h2><a class="text-med-gray" href="chapter/{{ event.id }}">{{ event.title }}</a></h2>
 									<h3>{{ event.d_time|date:"M, D d, Y - h:i" }}
 										<br>
 										Added By {{ event.owner.english_name }}</h3>

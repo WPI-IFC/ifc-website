@@ -9,32 +9,16 @@
 </head>
 <body>
     <style>
-        .nav-bar {
-            background: {{ house.primary_color }} !important;
-        }
-
-        .nav-bar li:hover{
-            background: {{ house.secondary_color }} !important;
-        }
-        
-        .nav-bar .drop-down-content {
-            background: {{ house.primary_color }} !important;
-            color: #ffffff;
-        }
-
-        .nav-bar .drop-down-content:hover {
-            background: {{ house.secondary_color }} !important;
-        }
     </style>
     {% include "header.html" %}
     <div class="container content-container">
         {% if has_perms %}
-        <span class="edit">[<a href="edit">edit</a></span>
+        <span class="ml-3 edit">[<a href="edit">edit</a></span>
         |
         <span class="create-event"><a href="/events/chapter/{{ house.lower_repr }}/new">+ New Event]</a></span>
         {% endif %}
         <br>
-        <div class="title-breakout pl-3 ml-3 mb-3 house-title">
+        <div class="title-breakout pl-3 ml-3 my-3 house-title">
             <h1 class="mb-0 font-weight-bold">{{house.english_name}}</h1>
             <h2 class="font-weight-light text-med-gray">{{house.nickname}}</h2>
         </div>
@@ -60,6 +44,7 @@
             {% if house.house_pic %}
                 <img src="{{ house.house_pic.url }}" alt="{{ house.english_name }} House">
             {% endif %}
+            <br>
             </div>
     </div>
     {% include "footer.html" %}

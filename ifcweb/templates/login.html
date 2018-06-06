@@ -8,12 +8,14 @@
 <body>
 {% include 'header.html' %}
     <div class='content-container container'>
-        <h2>Login</h2>
+        <br>
+        <h1>Login</h1>
         <form class='' method="post">
         {% csrf_token %}
         {% bootstrap_form form %}
         <button type="submit" class="btn btn-primary">Login</button>
         </form>
+        <br>
     </div>
 {% include 'footer.html' %}
 </body>
