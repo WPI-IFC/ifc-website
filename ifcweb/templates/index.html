@@ -5,39 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'houses/base.css' %}">
-    <link rel="stylesheet" href="{% static 'ifcweb/home.css' %}">
     <title>WPI IFC</title>
 </head>
 <body>
     {% include "header.html" %}
-    <div class="content-container">
-        <div class="featured-picture">
-            <img src="{% static 'ifcweb/splash.jpg' %}" alt="Banner Image">
-            <div class="call-to-text">
-                Website Under Development
-                <br><br> Developing The Leaders of Tomorrow
-            </div>
+    <div class="container content-container">
+        <br>
+        <div class="jumbotron" style="background-image: url({% static 'ifcweb/splash.jpg' %}); background-position: center; background-size: cover;">
+            <h2 class="font-weight-bold text-right py-5">
+                <p>WPI Inter-Fraternity Council</p>
+                <p class="lead text-med-gray">Developing The Leaders of Tomorrow</p>
+                <br><br>
+            </h1>
         </div>
         <h1>
             Main page
         </h1>
-        <div class="dynamic-content">
+        <div class="mx-4 dynamic-content">
             <br>
-            <h2>Recent Posts</h2>
-                <ul class="posts">
-                    {% if posts|length > 0 %}
-                    {% for post in posts %}
-                        <li class="post">
-                            <h1><a href="about/officer/{{ post.blog.slug }}/{{ post.id }}">{{ post.title }}</a></h1>
-                            <h2>{{ post.published|date:"M, D d, Y" }} - {{ post.author.first_name }} {{ post.author.last_name }} to {{ post.blog.position_title }}</h2>
-                            <p class="post-preivew">{{ post.body|truncatewords:50 }}</p>
-                        </li>
-                    {% endfor %}
-                    {% else %}
-                    <h3>There are no posts</h3>
-                    {% endif %}
-                </ul>
+            <h3>Recent Posts</h3>
+                {% if posts|length > 0 %}
+                {% for post in posts %}
+                    <div class="container post">
+                        <h3 class="row"><a href="about/officer/{{ post.blog.slug }}/{{ post.id }}">{{ post.title }}</a></h1>
+                        <h5 class="row text-med-gray">{{ post.published|date:"M, D d, Y" }} - {{ post.author.first_name }} {{ post.author.last_name }} to {{ post.blog.position_title }}</h2>
+                        <p class="row post-preivew">{{ post.body|truncatewords:50 }}</p>
+                    </div>
+                {% endfor %}
+                {% else %}
+                <h3 class="text-center font-weight-bold empty-dyn-content">There are no posts</h3>
+                {% endif %}
+                <br>
             </div>
     </div>
     {% include "footer.html" %}

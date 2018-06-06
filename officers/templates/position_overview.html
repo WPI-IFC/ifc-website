@@ -6,36 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ position }} Overview</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'houses/base.css' %}">
-    <link rel="stylesheet" href="{% static 'officers/base.css' %}">
 </head>
 <body>
     {% include 'header.html' %}
-    <div class="content-container">
-        <div class="static-content">
-            <img class="headshot" src="{{ biography.headshot.url }}" alt="{{ user.username }}">
-            <div class="title-and-name">
+    <div class="container content-container">
+        <br>
+        <div class="row static-content">
+            <img class="col-md-2 headshot" src="{{ biography.headshot.url }}" alt="{{ user.username }}">
+            <div class="col-md-3 title-and-name">
                 <h1>{{ position }}</h1>
                 <h2 class="name">{{ user.first_name }} {{ user.last_name }}</h2>
             </div>
-            <div class="biography">
+            <div class="col-7 biography">
                 <h3>Biography:</h3>
                 <p>{{ biography.content|linebreaks }}</p>
             </div>
         </div>
-        <div class="new-content">
+        <div class="row justify-content-center new-content">
             {% if request.user == user %}
-            <div class="create-content" id="post">
-                <a href="new"><div class="button">+ New Post</div></a>
+            <div class="mx-1 create-content" id="post">
+                <a href="new"><div class="btn btn-primary font-weight-bold">+ New Post</div></a>
             </div>
             {% if perms.events.add_officerevent %}
-            <div class="create-content" id="event">
-                <a href="/events/officers/new"><div class="button">+ New Event</div></a>
+            <div class="mx-1 create-content" id="event">
+                <a href="/events/officers/new"><div class="btn btn-primary font-weight-bold">+ New Event</div></a>
             </div>
             {% endif %}
             {% endif %}
         </div>
-        <span class="horizontal-divider"></span>
+        <hr>
         <div class="dynamic-content">
             <ul class="posts">
                 {% if posts|length > 0 %}
@@ -47,10 +46,12 @@
                     </li>
                 {% endfor %}
                 {% else %}
-                <h3>There are no posts from the {{ position }}</h3>
+                <h3 class="my-5 text-center font-weight-bold empty-dyn-content">There are no posts from the {{ position }}</h3>
+                <br>
                 {% endif %}
             </ul>
         </div>
+        <br>
     </div>
     {% include 'footer.html' %}
 </body>

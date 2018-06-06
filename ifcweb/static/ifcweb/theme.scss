@@ -1,0 +1,62 @@
+// Custom CSS
+// Variables
+$body-bg: #E0E0E0;
+$content-container: #F1F1F1;
+
+$theme-colors: (
+    "primary": #002B54,
+    "dark": #051f38
+);
+
+
+// Classes
+.content-container {
+    background: $content-container;
+}
+
+.navbar {
+    font-family: 'Roboto Mono', monospace;
+
+    .navbar-nav .nav-link:hover {
+        background: theme-color("dark");
+    }
+}
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Now we can use Bootstrap Variables
+.bg-light-gray {
+    background: $gray-400;
+}
+.text-med-gray {
+    color: $gray-600;
+}
+
+.officer-cards {
+    .card:hover {
+        transition-duration: .25s;
+        box-shadow: 0 0 10px $black;
+    }
+}
+
+.title-breakout {
+    border-left: 2px solid $gray-500;
+}
+
+.events {
+    h3 {
+        font-weight: 300;
+        font-size: 20px;
+    }
+}
+
+.empty-dyn-content {
+    color: $gray-500;
+}
+
+#motto {
+    font-family: 'PT serif', serfi;
+    font-style: italic;
+    font-size: 25px;
+}

@@ -5,52 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'houses/base.css' %}">
-    <link rel="stylesheet" href="{% static 'events/event_page.css' %}">
     <title>Events</title>
 </head>
 <body>
     {% include 'header.html' %}
-    <div class="content-container">
+    <div class="container content-container">
+        <br>
         <div class="featured-content">
             <div class="featured-image">
-                <img src="{{ splash.url }}">
+                <img class="img-fluid mx-auto d-block" src="{{ splash.url }}">
             </div>
         </div>
         <div class="body-content">
             <h1>{{ title }}</h1>
-            <h2>{{ time }}</h2>
-            <p>{{ description }}</p>
+            <h5>{{ time }}</h5>
+            <p class="pl-2">{{ description }}</p>
+            <br>
         </div>
     </div>
     {% include 'footer.html' %}
-    {% if type == "chapter" %}
-    <style>
-        .nav-bar {
-            background: {{ house.primary_color }} !important;
-        }
-
-        .nav-bar li:hover{
-            background: {{ house.secondary_color }} !important;
-        }
-        
-        .nav-bar .drop-down-content {
-            background: {{ house.primary_color }} !important;
-            color: #ffffff;
-        }
-
-        .nav-bar .drop-down-content:hover {
-            background: {{ house.secondary_color }} !important;
-        }
-
-        .nav-bar li:hover{
-            color: #333333;
-        }
-
-        .nav-bar .drop-down-content:hover {
-            color: #333333;
-        }
-    </style>
-    {% endif %}
 </body>
 </html>

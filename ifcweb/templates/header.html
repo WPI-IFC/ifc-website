@@ -1,27 +1,39 @@
-<div class="nav-bar">
+{% load bootstrap4 %}
+{% bootstrap_javascript jquery='full' %}
+{% include 'bootstrap_base.html' %}
+
+<nav class="navbar px-5 navbar-expand-md navbar-dark bg-primary mb-3">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400i" rel="stylesheet">
-    <a href="/" class="home-image">
+    <a href="/" class="navbar-brand">
     {% load static %}
-    <img src="{% static 'ifcweb/logo.svg' %}" alt="Logo">
+        <img width="65" height="65" src="{% static 'ifcweb/logo.svg' %}" alt="Logo">
     </a>
-    <ul>
-        <a href="/about"><li>About</li></a>
-        <a href="/chapters"><li>Chapters</li></a>
-        <a href="/events"><li>Events</li></a>
-        <a target="_blank" href="https://wpi.campuslabs.com/engage/organization/interfraternity-council"><li>TechSync</li></a>
-        {% if request.user.is_authenticated %}
-        <li class="drop-down">
-        <div>
-            <span>{{ request.user.username }} &dharr;</span>
-            <div class="drop-down-content">
-                <a href="/logout">Logout</a>
+    {% if house %}
+        {% include 'house_brand_override.html' %}
+    {% endif %}
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNave" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-right">
+            <a class="nav-link" href="/about"><li class="nav-item">About</li></a>
+            <a class="nav-link" href="/chapters"><li class="nav-item">Chapters</li></a>
+            <a class="nav-link" href="/events"><li"nav-item">Events</li></a>
+            <a class="nav-link" target="_blank" href="https://wpi.campuslabs.com/engage/organization/interfraternity-council"><li>TechSync</li></a>
+            {% if request.user.is_authenticated %}
+            <li class="dropdown nav-item">
+            <div>
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown">{{ request.user.username }}</a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="/logout">Logout</a>
+                </div>
             </div>
-        </div>
-        </li>
-        {% else %}
-        <a href="/login"><li>Login</li></a>
-        {% endif %}
-    </ul>
-</div>
+            </li>
+            {% else %}
+            <a class="nav-link" href="/login"><li class="nav-item">Login</li></a>
+            {% endif %}
+        </ul>
+    </div>
+</nav>

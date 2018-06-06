@@ -6,51 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{house.english_name}}</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'houses/base.css' %}">
-    <link rel="stylesheet" href="{% static 'houses/single_house.css' %}">
 </head>
 <body>
     <style>
-        .nav-bar {
-            background: {{ house.primary_color }} !important;
-        }
-
-        .nav-bar li:hover{
-            background: {{ house.secondary_color }} !important;
-        }
-        
-        .nav-bar .drop-down-content {
-            background: {{ house.primary_color }} !important;
-            color: #ffffff;
-        }
-
-        .nav-bar .drop-down-content:hover {
-            background: {{ house.secondary_color }} !important;
-        }
     </style>
     {% include "header.html" %}
-    <div class="content-container">
+    <div class="container content-container">
         {% if has_perms %}
-        <span class="edit">[<a href="edit">edit</a></span>
+        <span class="ml-3 edit">[<a href="edit">edit</a></span>
         |
         <span class="create-event"><a href="/events/chapter/{{ house.lower_repr }}/new">+ New Event]</a></span>
         {% endif %}
-        <div class="house-title">
-            <h1>{{house.english_name}}</h1>
-            <h2>{{house.nickname}}</h2>
+        <br>
+        <div class="title-breakout pl-3 ml-3 my-3 house-title">
+            <h1 class="mb-0 font-weight-bold">{{house.english_name}}</h1>
+            <h2 class="font-weight-light text-med-gray">{{house.nickname}}</h2>
         </div>
-        <div class="featured-content">
+        <div class="container featured-content">
             {% if has_featured_image %}
-                <img class="featured-image" src="{{house.featured_picture.url}}">
+                <img class="mx-auto d-block img-fluid mb-3 featured-image" src="{{house.featured_picture.url}}">
             {% else %}
-                <img class="featured-image" src="{% static 'houses/all_houses.png' %}">
+                <img class="mx-auto d-block img-fluid mb-3 featured-image" src="{% static 'houses/all_houses.png' %}">
             {% endif %}
-                <p class="featured-text" id="motto">
+                <p class="mx-5 text-med-gray featured-text" id="motto">
                     "{{house.motto}}"
                 </p>
-                <span class="featured-divider"></span>
+                <hr class="mx-5 px-5">
             </div>
-            <div class="body-content">
+            <div class="mx-4 body-content">
                 <p>
                     {{ house.extra_info|linebreaks }}
                 </p>
@@ -61,6 +44,7 @@
             {% if house.house_pic %}
                 <img src="{{ house.house_pic.url }}" alt="{{ house.english_name }} House">
             {% endif %}
+            <br>
             </div>
     </div>
     {% include "footer.html" %}
