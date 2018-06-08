@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% load bootstrap4 %}
+    <title>Change Password</title>
+</head>
+<body>
+{% include 'header.html' %}
+    <div class='content-container container'>
+        <br>
+        <h1>Change Password</h1>
+        <form class='' method="post">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <button type="submit" class="btn btn-primary">Change Password</button>
+        </form>
+        <br>
+    </div>
+{% include 'footer.html' %}
+</body>
+</html>

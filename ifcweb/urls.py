@@ -26,6 +26,8 @@ urlpatterns = [
     url(r'^about/$', views.about),
     url(r'^chapters/', include('houses.urls')),
     url(r'^login/$', auth_views.login, {'template_name': 'login.html'}, name='login'),
+    url(r'^change_password/$', auth_views.password_change, {'template_name': 'pass_change.html'}, name='change-password'),
+    url(r'^change_password/done/$', auth_views.password_change_done, {'template_name': 'pass_change_done.html'}, name='password_change_done'), # Django-required reverse name
     url(r'^events/', include('events.urls')),
     url(r'^logout/$', auth_views.logout, {'next_page': 'index'}),
     url(r'^style/', views.style, name="style-example"),
