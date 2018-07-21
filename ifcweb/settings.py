@@ -42,7 +42,7 @@ else:
     EMAIL_BACKEND = 'sendgrid_backend.SendgridBackend'
 
     # Sendgrid API
-    SENDGRID_API_KEY = os.getenv['SENDGRID_API_KEY']
+    SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
 
 # Application definition
 
