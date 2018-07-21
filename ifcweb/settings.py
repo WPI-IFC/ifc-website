@@ -32,9 +32,11 @@ if DEBUG:
 
     ALLOWED_HOSTS = ['hi-friend.dyn.wpi.edu', 'localhost', 'wpiifc.org']
 
-    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    EMAIL_BACKEND = 'sendgrid_backend.SendgridBackend'
 else:
     ALLOWED_HOSTS = ['wpiifc.org', 'www.wpiifc.org']
+
+    EMAIL_BACKEND = 'sendgrid_backend.SendgridBackend'
 
 # Application definition
 
@@ -185,3 +187,7 @@ SASS_PROCESSOR_INCLUDE_DIRS = [
     os.path.join(BASE_DIR, "bootstrap/scss"),
 ]
 
+
+# Sendgrid API
+
+SENDGRID_API_KEY = os.getenv['SENDGRID_API_KEY']
