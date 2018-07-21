@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% load bootstrap4 %}
+    <title>Password Reset</title>
+</head>
+<body>
+{% include 'header.html' %}
+    <div class='content-container container'>
+        <br>
+        <h1>Reset Password</h1>
+        <p>Forgotten your password? Enter your email address below, and we'll email instructions for setting a new one.</p>
+        <form class='' method="post">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <button type="submit" class="btn btn-primary">Reset Password</button>
+        </form>
+        <br>
+    </div>
+{% include 'footer.html' %}
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <title>{{ title }}</title>
+<body>
+    {% include 'header.html' %}
+    <div class="container px-5 content-container">
+        <br>
+        <h1 class="row justify-content-center text-center">Email Sent</h1>
+        <p class="row justify-content-center text-center">If the email you entered is in our database, it should be in your inbox soon.</p>
+        <br>
+    </div>
+{% include 'footer.html' %}
+</body>
+</html>
