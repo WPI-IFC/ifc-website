@@ -31,6 +31,8 @@ if DEBUG:
     )
 
     ALLOWED_HOSTS = ['hi-friend.dyn.wpi.edu', 'localhost', 'wpiifc.org']
+
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 else:
     ALLOWED_HOSTS = ['wpiifc.org', 'www.wpiifc.org']
 
