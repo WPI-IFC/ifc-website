@@ -33,10 +33,16 @@ if DEBUG:
     ALLOWED_HOSTS = ['hi-friend.dyn.wpi.edu', 'localhost', 'wpiifc.org']
 
     EMAIL_BACKEND = 'sendgrid_backend.SendgridBackend'
+
+    # Sendgrid API
+    SENDGRID_API_KEY = 'FAKE_API_KEY'
 else:
     ALLOWED_HOSTS = ['wpiifc.org', 'www.wpiifc.org']
 
     EMAIL_BACKEND = 'sendgrid_backend.SendgridBackend'
+
+    # Sendgrid API
+    SENDGRID_API_KEY = os.getenv['SENDGRID_API_KEY']
 
 # Application definition
 
@@ -186,8 +192,3 @@ SASS_PRECISION = 8
 SASS_PROCESSOR_INCLUDE_DIRS = [
     os.path.join(BASE_DIR, "bootstrap/scss"),
 ]
-
-
-# Sendgrid API
-
-SENDGRID_API_KEY = os.getenv['SENDGRID_API_KEY']
