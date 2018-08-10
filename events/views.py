@@ -10,8 +10,8 @@ from houses.models import Fraternity
 def event_index(request):
     context = {}
     #TODO(Tom): Change to greater than current datetime
-    context['ifc_events'] = OfficerEvent.objects.filter(d_time__gt=datetime.now()).reverse()
-    context['chapter_events'] = HouseEvent.objects.filter(d_time__gt=datetime.now()).reverse()
+    context['ifc_events'] = OfficerEvent.objects.filter(date__gt=datetime.now().date()).reverse()
+    context['chapter_events'] = HouseEvent.objects.filter(date__gt=datetime.now().date()).reverse()
     return render(request, "events_overview.html", context)
 
 
