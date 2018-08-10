@@ -1,6 +1,7 @@
 from django import forms
 
 from .models import OfficerEvent, HouseEvent
+from .widgets import Html5Date, Html5Time
 
 
 class OfficerEventForm(forms.ModelForm):
@@ -11,6 +12,9 @@ class OfficerEventForm(forms.ModelForm):
         self.fields["date"].label = "Date"
         self.fields["start_time"].label = "Start Time"
         self.fields["end_time"].label = "End Time"
+        self.fields["date"].widget = Html5Date()
+        self.fields["start_time"].widget = Html5Time()
+        self.fields["end_time"].widget = Html5Time()
 
     class Meta:
         model = OfficerEvent
@@ -25,6 +29,9 @@ class HouseEventForm(forms.ModelForm):
         self.fields["date"].label = "Date"
         self.fields["start_time"].label = "Start Time"
         self.fields["end_time"].label = "End Time"
+        self.fields["date"].widget = Html5Date()
+        self.fields["start_time"].widget = Html5Time()
+        self.fields["end_time"].widget = Html5Time()
 
     class Meta:
         model = HouseEvent
