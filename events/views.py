@@ -10,8 +10,8 @@ from houses.models import Fraternity
 def event_index(request):
     context = {}
     #TODO(Tom): Change to greater than current datetime
-    context['ifc_events'] = OfficerEvent.objects.filter(d_time__gt=datetime.now()).reverse()
-    context['chapter_events'] = HouseEvent.objects.filter(d_time__gt=datetime.now()).reverse()
+    context['ifc_events'] = OfficerEvent.objects.filter(date__gt=datetime.now().date()).reverse()
+    context['chapter_events'] = HouseEvent.objects.filter(date__gt=datetime.now().date()).reverse()
     return render(request, "events_overview.html", context)
 
 
@@ -67,7 +67,9 @@ def officer_event_info(request, event_id):
     event = get_object_or_404(OfficerEvent, id=event_id)
     context['title'] = event.title
     context['description'] = event.description
-    context['time'] = event.d_time
+    context['date'] = event.date
+    context['start_time'] = event.start_time
+    context['end_time'] = event.end_time
     context['splash'] = event.splash_img
     return render(request, "single_event.html", context)
 
@@ -77,8 +79,9 @@ def chapter_event_info(request, event_id):
     event = get_object_or_404(HouseEvent, id=event_id)
     context['title'] = event.title
     context['description'] = event.description
-    context['time'] = event.d_time
+    context['date'] = event.date
+    context['start_time'] = event.start_time
+    context['end_time'] = event.end_time
     context['splash'] = event.splash_img
     context['house'] = event.owner
-    print(context['house'])
     return render(request, "single_event.html", context)
