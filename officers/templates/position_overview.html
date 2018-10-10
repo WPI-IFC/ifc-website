@@ -36,10 +36,10 @@
         </div>
         <hr>
         <div class="dynamic-content">
-            <ul class="posts">
+            <ul class="list-group list-group-flush posts">
                 {% if posts|length > 0 %}
                 {% for post in posts %}
-                    <li class="post">
+                    <li class="list-group-item post">
                         <h1><a href="{{ post.id }}">{{ post.title }}</a></h1>
                         <h2>{{ post.published|date:"M, D d, Y" }}</h2>
                         <p class="post-preivew">{{ post.body|truncatewords:50 }}</p>

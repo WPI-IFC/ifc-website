@@ -55,6 +55,10 @@ $theme-colors: (
     color: $gray-500;
 }
 
+.headshot {
+    object-fit: cover;
+}
+
 #motto {
     font-family: 'PT serif', serfi;
     font-style: italic;
