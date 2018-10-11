@@ -46,7 +46,9 @@
             {% endif %}
             <br>
             {% if house.calendar_link %}
-                <iframe src="{{ house.calendar_link }}" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                <div style="width: 100%;">
+                    <iframe src="{{ house.calendar_link }}" style="border: 0; margin:0 auto; margin-bottom:10px; display: block;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>
             {% endif %}
             </div>
     </div>
