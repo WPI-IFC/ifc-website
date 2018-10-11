@@ -15,6 +15,7 @@ class Fraternity(models.Model):
     house_pic = models.ImageField(
         upload_to="house",
         blank=True)
+    calendar_link = models.URLField(blank=True)
 
     def __str__(self):
         return self.english_name
