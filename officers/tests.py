@@ -71,7 +71,7 @@ class ViewTesting(TestCase):
 
         updated_post = Post.objects.get(id=self.post.id)
         self.assertGreater(updated_post.last_edit, self.post.published)
-        self.assertEquals(updated_post.title, data['title'])
+        self.assertEqual(updated_post.title, data['title'])
         self.assertEqual(updated_post.body, data['body'])
 
     def test_unauthorized_edits(self):
