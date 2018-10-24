@@ -45,6 +45,11 @@
                 <img src="{{ house.house_pic.url }}" alt="{{ house.english_name }} House">
             {% endif %}
             <br>
+            {% if house.calendar_link %}
+                <div style="width: 100%;">
+                    <iframe src="{{ house.calendar_link }}" style="border: 0; margin:0 auto; margin-bottom:10px; display: block;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>
+            {% endif %}
             </div>
     </div>
     {% include "footer.html" %}

@@ -46,6 +46,8 @@ def house_edit(request, house):
         if form.is_valid():
             form.save() # NOTE(Tom): may want to add a timestamp feature in the future
             return redirect('house-landing', house=house)
+        else:
+            return render(request, "house_edit.html", {'form': form})
 
     elif request.method == 'GET':
         if request.user.groups.filter(name=org.english_name).exists():
